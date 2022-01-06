@@ -3073,7 +3073,7 @@ input::-moz-focus-inner {
 }
 
 .s-about__photo {
-    background-image: url(/assets/img/beekeeper-suit.jpg);
+    background-image: url(../img/beekeeper-suit.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
