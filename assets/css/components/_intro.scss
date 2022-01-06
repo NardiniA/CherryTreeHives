@@ -1,0 +1,490 @@
+/* ------------------------------------------------------------------- 
+ * ## theme-specific typography classes
+ * ------------------------------------------------------------------- */
+.text-pretitle {
+    font-family   : var(--font-2);
+    font-size     : var(--text-md);
+    font-weight   : 300;
+    margin-top    : 0;
+    margin-bottom : 0;
+    margin-left   : .4rem;
+    position      : relative;
+}
+
+.text-pretitle::before {
+    content          : "";
+    display          : block;
+    height           : 1px;
+    width            : 5.6rem;
+    background-color : var(--color-2-darker);
+    opacity          : .15;
+    position         : absolute;
+    top              : 50%;
+    right            : calc(100% + 1.6rem);
+}
+
+.text-huge-title {
+    --text-huge       : 11.2rem;
+    --text-multiplier : 1;
+    font-family       : var(--font-3);
+    font-weight       : 400;
+    font-size         : calc(var(--text-huge) * var(--text-multiplier));
+    line-height       : 1.036;
+    margin-top        : 0;
+}
+
+/* ------------------------------------------------------------------- 
+ * responsive:
+ * project-wide shared styles
+ * ------------------------------------------------------------------- */
+@media screen and (max-width: 1600px) {
+    .text-pretitle::before {
+        width : 4rem;
+    }
+
+    .text-huge-title {
+        --text-multiplier : .857;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .text-pretitle {
+        margin-left : 0;
+    }
+
+    .text-pretitle::before {
+        display : none;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .text-pretitle {
+        font-size : calc(var(--text-size) * 1.05);
+    }
+
+    .text-huge-title {
+        --text-multiplier : .821;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .text-huge-title {
+        --text-multiplier : .75;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .text-huge-title {
+        --text-multiplier : .679;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .text-pretitle {
+        font-size : var(--text-sm);
+    }
+
+    .text-huge-title {
+        --text-multiplier : .643;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .text-huge-title {
+        --text-multiplier : .607;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .text-huge-title {
+        --text-multiplier : .5;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .text-huge-title {
+        --text-multiplier : .464;
+    }
+}
+
+
+/* ===================================================================
+ * # INTRO
+ *
+ *
+ * ------------------------------------------------------------------- */
+.s-intro {
+    --header-height     : 8.8rem;
+    --logo-width        : 78px;
+    --text-display-size : 11.2rem;
+    --text-multiplier   : 1;
+    z-index             : 3;
+    background-color    : black;
+    width               : 100%;
+    height              : 100vh;
+    min-height          : calc(25.5 * var(--space));
+    box-shadow          : 0 0.8px 0.8px rgba(0, 0, 0, 0.031), 
+                          0 1.9px 1.9px rgba(0, 0, 0, 0.044), 
+                          0 3.9px 3.9px rgba(0, 0, 0, 0.056), 
+                          0 8px 8px rgba(0, 0, 0, 0.069), 
+                          0 22px 22px rgba(0, 0, 0, 0.1);
+    overflow            : hidden;
+    position            : relative;
+}
+
+.s-intro a {
+    border : none;
+}
+
+/* --------------------------------------------------------------------
+ * ## intro slider
+ * -------------------------------------------------------------------- */
+.s-intro__slider {
+    display  : block;
+    position : absolute;
+    top      : 0;
+    left     : 0;
+    right    : 0;
+    bottom   : 0;
+    width    : 100%;
+    height   : 100%;
+}
+
+.s-intro__slide {
+    background-repeat   : no-repeat;
+    background-position : 50% 50%;
+    background-size     : cover;
+    position            : relative;
+}
+
+.s-intro__slide::before {
+    display        : block;
+    content        : "";
+    position       : absolute;
+    top            : 0;
+    left           : 0;
+    right          : 0;
+    bottom         : 0;
+    width          : 100%;
+    height         : 100%;
+    background     : black;
+    pointer-events : none;
+    opacity        : .2;
+}
+
+.s-intro__slide::after {
+    display        : block;
+    content        : "";
+    position       : absolute;
+    top            : 0;
+    left           : 0;
+    right          : 0;
+    bottom         : 0;
+    width          : 100%;
+    height         : 100%;
+    background     : linear-gradient(90deg, black 10%, rgba(0, 0, 0, 0) 100%);
+    pointer-events : none;
+    opacity        : .4;
+}
+
+.s-intro__slide.bg-opacity-10::before {
+    opacity : .1;
+}
+
+.s-intro__slide.bg-opacity-20::before {
+    opacity : .2;
+}
+
+.s-intro__slide.bg-opacity-30::before {
+    opacity : .3;
+}
+
+.s-intro__slide.bg-opacity-40::before {
+    opacity : .4;
+}
+
+.s-intro__slide.bg-opacity-50::before {
+    opacity : .5;
+}
+
+.s-intro__slide.bg-opacity-60::before {
+    opacity : .6;
+}
+
+.s-intro__slide.bg-opacity-70::before {
+    opacity : .7;
+}
+
+.s-intro__slide.bg-opacity-80::before {
+    opacity : .8;
+}
+
+.s-intro__slide.bg-opacity-90::before {
+    opacity : .9;
+}
+
+/* --------------------------------------------------------------------
+ * ## intro content
+ * -------------------------------------------------------------------- */
+.s-intro__content {
+    z-index        : 2;
+    align-items    : flex-end;
+    max-width      : var(--width-wider);
+    height         : 100vh;
+    padding-top    : 20vh;
+    padding-bottom : 9.6rem;
+    position       : relative;
+}
+
+.s-intro__content .text-pretitle,
+.s-intro__content .text-huge-title {
+    color : white;
+}
+
+.s-intro__content .text-pretitle::before {
+    background-color : white;
+}
+
+.s-intro__content-bottom {
+    display    : flex;
+    width      : calc(100% - 4rem);
+    margin-top : var(--vspace-2);
+}
+
+.s-intro__content-bottom-block {
+    margin-right : calc(var(--gutter) * 4);
+}
+
+.s-intro__content-bottom-block:last-child {
+    margin-right : 0;
+}
+
+.s-intro__content-bottom h5 {
+    font-size     : var(--text-size);
+    font-weight   : 300;
+    margin-top    : 0;
+    margin-bottom : var(--vspace-0_375);
+    color         : rgba(255, 255, 255, 0.3);
+}
+
+/* --------------------------------------------------------------------
+ * ## intro social
+ * -------------------------------------------------------------------- */
+.s-intro .social {
+    list-style  : none;
+    font-family : var(--font-2);
+    font-weight : 300;
+    font-size   : var(--text-md);
+    line-height : var(--vspace-1_25);
+    margin-left : 0;
+}
+
+.s-intro .social a {
+    color : white;
+}
+
+.s-intro .social li {
+    display      : inline-block;
+    padding-left : 0;
+    margin-right : 1rem;
+}
+
+.s-intro .social li:last-child {
+    margin-right : 0;
+}
+
+/* --------------------------------------------------------------------
+ * ## intro scrolldown
+ * -------------------------------------------------------------------- */
+.s-intro__scroll {
+    z-index          : 3;
+    width            : 250px;
+    transform        : rotate(-90deg);
+    transform-origin : bottom left;
+    position         : absolute;
+    left             : calc(100% - 4.8rem);
+    bottom           : 0;
+}
+
+.s-intro__scroll a {
+    display        : block;
+    font-family    : var(--font-2);
+    font-weight    : 300;
+    font-size      : calc(var(--text-size) * 0.5);
+    text-transform : uppercase;
+    letter-spacing : .35em;
+    padding-left   : 9.6rem;
+    color          : rgba(255, 255, 255, 0.5);
+    position       : relative;
+}
+
+.s-intro__scroll a:focus,
+.s-intro__scroll a:hover {
+    color : white;
+}
+
+.s-intro__scroll a::before {
+    content          : "";
+    display          : block;
+    height           : 1px;
+    width            : 8rem;
+    background-color : rgba(255, 255, 255, 0.15);
+    position         : absolute;
+    top              : calc(50% - 1px);
+    left             : 0;
+}
+
+/* --------------------------------------------------------------------
+ * ## intro transitions
+ * -------------------------------------------------------------------- */
+.s-intro__logo,
+.s-intro__content,
+.s-intro__scroll {
+    transition-timing-function : cubic-bezier(0.28, 0.12, 0.22, 1);
+    transition-duration        : .5s;
+    transition-delay           : 0s;
+    opacity                    : 0;
+}
+
+.s-intro__logo {
+    transition-property : opacity, transform;
+    transform           : translate(0, -100%);
+}
+
+.s-intro__content {
+    transition-property : opacity;
+}
+
+.s-intro__scroll {
+    transition-property : opacity, bottom;
+    bottom              : -250px;
+}
+
+.no-js .s-intro__logo,
+.no-js .s-intro__content,
+.no-js .s-intro__scroll,
+.ss-show .s-intro__logo,
+.ss-show .s-intro__content,
+.ss-show .s-intro__scroll {
+    opacity : 1;
+}
+
+.no-js .s-intro__logo,
+.no-js .s-intro__notify,
+.ss-show .s-intro__logo,
+.ss-show .s-intro__notify {
+    transform : translate(0, 0);
+}
+
+.no-js .s-intro__content,
+.ss-show .s-intro__content {
+    transition-duration : 1.5s;
+    transition-delay    : .5s;
+}
+
+.no-js .s-intro__scroll,
+.ss-show .s-intro__scroll {
+    transition-delay : 1s;
+    bottom           : 0;
+}
+
+/* ------------------------------------------------------------------- 
+ * responsive:
+ * intro
+ * ------------------------------------------------------------------- */
+@media screen and (max-width: 1800px) {
+    .s-intro__content {
+        max-width : 1500px;
+    }
+}
+
+@media screen and (max-width: 1700px) {
+    .s-intro__content {
+        max-width : 1420px;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .s-intro__content {
+        max-width : 1360px;
+    }
+
+    .s-intro__content-bottom h5 {
+        font-size   : var(--text-sm);
+        line-height : var(--vspace-0_75);
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .s-intro__scroll {
+        left : calc(100% - 3.8rem);
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .s-intro__content .text-huge-title {
+        padding-right : calc(var(--gutter) * 4);
+    }
+
+    .s-intro__content .text-huge-title br {
+        display : none;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .s-intro__content .text-huge-title {
+        padding-right : 0;
+    }
+
+    .s-intro__content-bottom-block {
+        margin-right : calc(var(--gutter) * 3);
+    }
+
+    .s-intro .social {
+        font-size   : var(--text-size);
+        line-height : var(--vspace-0_875);
+    }
+
+    .s-intro__scroll a {
+        padding-left : 5.6rem;
+    }
+
+    .s-intro__scroll a::before {
+        width : 4rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .s-intro {
+        --header-height : 8rem;
+    }
+
+    .s-intro__scroll {
+        left : calc(100% - 2.8rem);
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .s-intro__content {
+        align-items : center;
+    }
+
+    .s-intro__content-bottom {
+        display    : block;
+        margin-top : var(--vspace-1_5);
+    }
+
+    .s-intro__content-bottom-block {
+        margin-right : 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .s-intro__content {
+        padding-bottom : 12rem;
+    }
+
+    .s-intro__scroll {
+        left : calc(100% - 2rem);
+    }
+}

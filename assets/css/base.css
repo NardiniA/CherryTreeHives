@@ -1,0 +1,788 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Marcellus&family=Gothic+A1:wght@300;400;500;600;700&display=fallback");
+
+:root {
+    --font-1    : "Lora", serif;
+    --font-2    : "Gothic A1", sans-serif;
+    --font-3    : "Marcellus", serif;
+
+    /* monospace
+    */
+    --font-mono : Consolas, "Andale Mono", Courier, "Courier New", monospace;
+}
+
+/* ------------------------------------------------------------------- 
+ * ## colors
+ * ------------------------------------------------------------------- */
+:root {
+
+    /* color-1(#5B5E53)
+     * color-2(#36151E)
+     * color-3(#FFE4AF)
+     */
+    --color-1                      : hsla(76, 6%, 35%, 1);
+    --color-2                      : hsla(38, 44%, 25%, 1);
+    --color-3                      : hsla(40, 100%, 75%, 1);
+
+    /* theme color variations
+     */
+    --color-1-lighter              : hsla(76, 6%, 55%, 1);
+    --color-1-light                : hsla(76, 6%, 45%, 1);
+    --color-1-dark                 : hsla(76, 6%, 25%, 1);
+    --color-1-darker               : hsla(76, 6%, 15%, 1);
+    --color-2-lighter              : hsla(38, 44%, 45%, 1);
+    --color-2-light                : hsla(38, 44%, 35%, 1);
+    --color-2-dark                 : hsla(38, 44%, 15%, 1);
+    --color-2-darker               : hsla(38, 44%, 5%, 1);
+    --color-3-lighter              : hsla(40, 100%, 97%, 1);
+    --color-3-light                : hsla(40, 100%, 85%, 1);
+    --color-3-dark                 : hsla(40, 100%, 65%, 1);
+    --color-3-darker               : hsla(40, 100%, 55%, 1);
+
+    /* feedback colors
+     * color-error(#ffd1d2), color-success(#c8e675), 
+     * color-info(#d7ecfb), color-notice(#fff099)
+     */
+    --color-error                  : hsla(359, 100%, 91%, 1);
+    --color-success                : hsla(76, 69%, 68%, 1);
+    --color-info                   : hsla(205, 82%, 91%, 1);
+    --color-notice                 : hsla(51, 100%, 80%, 1);
+    --color-error-content          : hsla(359, 50%, 50%, 1);
+    --color-success-content        : hsla(76, 29%, 28%, 1);
+    --color-info-content           : hsla(205, 32%, 31%, 1);
+    --color-notice-content         : hsla(51, 30%, 30%, 1);
+
+    /* shades 
+     * generated using 
+     * Tint & Shade Generator 
+     * (https://maketintsandshades.com/)
+     */
+    --color-black                  : #000000;
+    --color-gray-19                : #020202;
+    --color-gray-18                : #040404;
+    --color-gray-17                : #060607;
+    --color-gray-16                : #080809;
+    --color-gray-15                : #0a0b0b;
+    --color-gray-14                : #0c0d0d;
+    --color-gray-13                : #0e0f0f;
+    --color-gray-12                : #101112;
+    --color-gray-11                : #121314;
+    --color-gray-10                : #141516;
+    --color-gray-9                 : #2c2c2d;
+    --color-gray-8                 : #43845;
+    --color-gray-7                 : #5b5b5c;
+    --color-gray-6                 : #727373;
+    --color-gray-5                 : #8a8a8b;
+    --color-gray-4                 : #a1a1a2;
+    --color-gray-3                 : #b9b9b9;
+    --color-gray-2                 : #d0d0d0;
+    --color-gray-1                 : #e8e8e8;
+    --color-white                  : #ffffff;
+
+    /* text
+     */
+    --color-text-dark              : var(--color-black);
+    --color-text                   : var(--color-gray-10);
+    --color-text-light             : var(--color-gray-7);
+    --color-placeholder            : var(--color-gray-6);
+
+    /* buttons
+     */
+    --color-btn                    : var(--color-3-light);
+    --color-btn-text               : var(--color-black);
+    --color-btn-hover              : var(--color-3);
+    --color-btn-hover-text         : var(--color--black);
+    --color-btn-primary            : var(--color-1-dark);
+    --color-btn-primary-text       : var(--color-3-light);
+    --color-btn-primary-hover      : var(--color-1-darker);
+    --color-btn-primary-hover-text : var(--color-3-light);
+    --color-btn-stroke             : var(--color-1-darker);
+    --color-btn-stroke-text        : var(--color-black);
+    --color-btn-stroke-hover       : var(--color-1-darker);
+    --color-btn-stroke-hover-text  : var(--color-3-light);
+
+    /* preloader
+     */
+    --color-preloader-bg           : var(--color-gray-10);
+    --color-loader                 : white;
+    --color-loader-light           : rgba(255, 255, 255, 0.1);
+
+    /* others
+     */
+    --color-body                   : var(--color-3-lighter);
+    --color-border                 : rgba(0, 0, 0, .1);
+    --border-radius                : 3px;
+}
+
+/* ------------------------------------------------------------------- 
+ * ## spacing and typescale
+ * ------------------------------------------------------------------- */
+:root {
+
+    /* spacing
+     * base font size: 20px 
+     * vertical space unit : 32px
+     */
+    --base-size        : 62.5%;
+    --multiplier       : 1;
+    --base-font-size   : calc(2rem * var(--multiplier));
+    --space            : calc(3.2rem * var(--multiplier));
+
+    /* vertical spacing 
+     */
+    --vspace-0_125     : calc(0.125 * var(--space));
+    --vspace-0_25      : calc(0.25 * var(--space));
+    --vspace-0_375     : calc(0.375 * var(--space));
+    --vspace-0_5       : calc(0.5 * var(--space));
+    --vspace-0_625     : calc(0.625 * var(--space));
+    --vspace-0_75      : calc(0.75 * var(--space));
+    --vspace-0_875     : calc(0.875 * var(--space));
+    --vspace-1         : calc(var(--space));
+    --vspace-1_25      : calc(1.25 * var(--space));
+    --vspace-1_5       : calc(1.5 * var(--space));
+    --vspace-1_75      : calc(1.75 * var(--space));
+    --vspace-2         : calc(2 * var(--space));
+    --vspace-2_5       : calc(2.5 * var(--space));
+    --vspace-3         : calc(3 * var(--space));
+    --vspace-3_5       : calc(3.5 * var(--space));
+    --vspace-4         : calc(4 * var(--space));
+    --vspace-4_5       : calc(4.5 * var(--space));
+    --vspace-5         : calc(5 * var(--space));
+
+    /* type scale
+     * ratio 1         :2 | base: 20px
+     * -------------------------------------------------------
+     *
+     * --text-display-3 = (86.00px)
+     * --text-display-2 = (71.66px)
+     * --text-display-1 = (59.72px)
+     * --text-xxxl      = (49.77px)
+     * --text-xxl       = (41.47px)
+     * --text-xl        = (34.56px)
+     * --text-lg        = (28.80px)
+     * --text-md        = (24.00px)
+     * --text-size      = (20.00px) BASE
+     * --text-sm        = (16.67px)
+     * --text-xs        = (13.89px)
+     *
+     * ---------------------------------------------------------
+     */
+    --text-scale-ratio : 1.2;
+    --text-size        : var(--base-font-size);
+    --text-xs          : calc((var(--text-size) / var(--text-scale-ratio)) / var(--text-scale-ratio));
+    --text-sm          : calc(var(--text-xs) * var(--text-scale-ratio));
+    --text-md          : calc(var(--text-sm) * var(--text-scale-ratio) * var(--text-scale-ratio));
+    --text-lg          : calc(var(--text-md) * var(--text-scale-ratio));
+    --text-xl          : calc(var(--text-lg) * var(--text-scale-ratio));
+    --text-xxl         : calc(var(--text-xl) * var(--text-scale-ratio));
+    --text-xxxl        : calc(var(--text-xxl) * var(--text-scale-ratio));
+    --text-display-1   : calc(var(--text-xxxl) * var(--text-scale-ratio));
+    --text-display-2   : calc(var(--text-display-1) * var(--text-scale-ratio));
+    --text-display-3   : calc(var(--text-display-2) * var(--text-scale-ratio));
+
+    /* default button height
+     */
+    --vspace-btn       : var(--vspace-2);
+}
+
+/* on mobile devices below 600px, change the value of '--multiplier' 
+ * to adjust the values of base font size and vertical space unit.
+ */
+@media screen and (max-width: 600px) {
+    :root {
+        --multiplier : .875;
+    }
+}
+
+/* ------------------------------------------------------------------- 
+ * ## grid variables
+ * ------------------------------------------------------------------- */
+:root {
+
+    /* widths for rows and containers
+     */
+    --width-full     : 100%;
+    --width-max      : 1200px;
+    --width-wide     : 1400px;
+    --width-wider    : 1600px;
+    --width-widest   : 1800px;
+    --width-narrow   : 1000px;
+    --width-narrower : 800px;
+    --width-grid-max : var(--width-max);
+
+    /* gutter
+     */
+    --gutter         : 2.4rem;
+}
+
+/* on medium screen devices
+ */
+@media screen and (max-width: 1200px) {
+    :root {
+        --gutter : 1.8rem;
+    }
+}
+
+/* on mobile devices
+ */
+@media screen and (max-width: 600px) {
+    :root {
+        --gutter : 1rem;
+    }
+}
+
+
+/* ====================================================================
+ * # NORMALIZE
+ *
+ *
+ * --------------------------------------------------------------------
+ * normalize.css v8.0.1 | MIT License |
+ * github.com/necolas/normalize.css
+ * -------------------------------------------------------------------- */
+html {
+    line-height              : 1.15;
+    -webkit-text-size-adjust : 100%;
+}
+
+body {
+    margin : 0;
+}
+
+main {
+    display : block;
+}
+
+h1 {
+    font-size : 2em;
+    margin    : 0.67em 0;
+}
+
+hr {
+    box-sizing : content-box;
+    height     : 0;
+    overflow   : visible;
+}
+
+pre {
+    font-family : monospace, monospace;
+    font-size   : 1em;
+}
+
+a {
+    background-color : transparent;
+}
+
+abbr[title] {
+    border-bottom   : none;
+    text-decoration : underline;
+    text-decoration : underline dotted;
+}
+
+b,
+strong {
+    font-weight : bolder;
+}
+
+code,
+kbd,
+samp {
+    font-family : monospace, monospace;
+    font-size   : 1em;
+}
+
+small {
+    font-size : 80%;
+}
+
+sub,
+sup {
+    font-size      : 75%;
+    line-height    : 0;
+    position       : relative;
+    vertical-align : baseline;
+}
+
+sub {
+    bottom : -0.25em;
+}
+
+sup {
+    top : -0.5em;
+}
+
+img {
+    border-style : none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family : inherit;
+    font-size   : 100%;
+    line-height : 1.15;
+    margin      : 0;
+}
+
+button,
+input {
+    overflow : visible;
+}
+
+button,
+select {
+    text-transform : none;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+    -webkit-appearance : button;
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+    border-style : none;
+    padding      : 0;
+}
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+    outline : 1px dotted ButtonText;
+}
+
+fieldset {
+    padding : 0.35em 0.75em 0.625em;
+}
+
+legend {
+    box-sizing  : border-box;
+    color       : inherit;
+    display     : table;
+    max-width   : 100%;
+    padding     : 0;
+    white-space : normal;
+}
+
+progress {
+    vertical-align : baseline;
+}
+
+textarea {
+    overflow : auto;
+}
+
+[type="checkbox"],
+[type="radio"] {
+    box-sizing : border-box;
+    padding    : 0;
+}
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+    height : auto;
+}
+
+[type="search"] {
+    -webkit-appearance : textfield;
+    outline-offset     : -2px;
+}
+
+[type="search"]::-webkit-search-decoration {
+    -webkit-appearance : none;
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance : button;
+    font               : inherit;
+}
+
+details {
+    display : block;
+}
+
+summary {
+    display : list-item;
+}
+
+template {
+    display : none;
+}
+
+[hidden] {
+    display : none;
+}
+
+
+/* ===================================================================
+ * # BASE SETUP
+ *
+ *
+ * ------------------------------------------------------------------- */
+html {
+    font-size  : var(--base-size);
+    box-sizing : border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing : inherit;
+}
+
+html,
+body {
+    height : 100%;
+}
+
+body {
+    background-color            : var(--color-body);
+    -webkit-overflow-scrolling  : touch;
+    -webkit-text-size-adjust    : 100%;
+    -webkit-tap-highlight-color : rgba(0, 0, 0, 0);
+    -webkit-font-smoothing      : antialiased;
+    -moz-osx-font-smoothing     : grayscale;
+}
+
+p {
+    font-size      : inherit;
+    text-rendering : optimizeLegibility;
+}
+
+a {
+    text-decoration : none;
+}
+
+svg,
+img,
+video {
+    max-width : 100%;
+    height    : auto;
+}
+
+pre {
+    overflow : auto;
+}
+
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+p,
+blockquote,
+th,
+td {
+    margin  : 0;
+    padding : 0;
+}
+
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea {
+    -webkit-appearance : none;
+    -moz-appearance    : none;
+    appearance         : none;
+}
+
+.gbtn svg {
+    max-width: none;
+}
+
+/* ===================================================================
+ * # GRID v4.0.0
+ *
+ *
+ *   -----------------------------------------------------------------
+ * - Grid breakpoints are based on MAXIMUM WIDTH media queries, 
+ *   meaning they apply to that one breakpoint and ALL THOSE BELOW IT.
+ * - Grid columns without a specified width will automatically layout 
+ *   as equal width columns.
+ *
+ * - BLOCK GRID columns(columns inside BLOCK GRID containers) are 
+ *   equally-sized columns define at parent/row level. 
+ *   A BLOCK GRID container's class attribute value begins with "block-".
+ *
+ * ------------------------------------------------------------------- */
+
+/* row 
+ */
+.row {
+    width     : 92%;
+    max-width : var(--width-grid-max);
+    margin    : 0 auto;
+    display   : flex;
+    flex-flow : row wrap;
+}
+
+/* column
+ */
+.column {
+    display : block;
+    flex    : 1 1 0%;
+    padding : 0 var(--gutter);
+}
+
+/* --------------------------------------------------------------------
+ * ## mobile devices 
+ * -------------------------------------------------------------------- */
+@media screen and (max-width: 600px) {
+    .row {
+        width         : 100%;
+        padding-left  : 6vw;
+        padding-right : 6vw;
+    }
+}
+
+
+/* ===================================================================
+ * # TYPOGRAPHY 
+ *
+ *
+ * ------------------------------------------------------------------- 
+ * type scale - ratio 1:2 | base: 20px
+ * -------------------------------------------------------------------
+ *
+ * --text-display-3 = (86.00px)
+ * --text-display-2 = (71.66px)
+ * --text-display-1 = (59.72px)
+ * --text-xxxl      = (49.77px)
+ * --text-xxl       = (41.47px)
+ * --text-xl        = (34.56px)
+ * --text-lg        = (28.80px)
+ * --text-md        = (24.00px)
+ * --text-size      = (20.00px) BASE
+ * --text-sm        = (16.67px)
+ * --text-xs        = (13.89px)
+ *
+ * -------------------------------------------------------------------- */
+
+/* --------------------------------------------------------------------
+ * ## base type styles
+ * -------------------------------------------------------------------- */
+body {
+    font-family : var(--font-1);
+    font-size   : var(--base-font-size);
+    font-weight : 400;
+    line-height : var(--vspace-1);
+    color       : var(--color-text);
+}
+
+/* links
+ */
+a {
+    color         : var(--color-2);
+    border-bottom : 1px solid var(--color-2);
+    transition    : all 0.3s ease-in-out;
+}
+
+a:focus,
+a:hover,
+a:active {
+    color         : black;
+    border-bottom : 1px solid black;
+}
+
+a:hover,
+a:active {
+    outline : 0;
+}
+
+/* headings
+ */
+h1, h2, h3, h4, h5, h6, 
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family            : var(--font-2);
+    font-weight            : 500;
+    color                  : var(--color-2-darker);
+    font-variant-ligatures : common-ligatures;
+    text-rendering         : optimizeLegibility;
+}
+
+h1, .h1 {
+    margin-top    : var(--vspace-2);
+    margin-bottom : var(--vspace-0_75);
+}
+
+h2, .h2,
+h3, .h3,
+h4, .h4 {
+    margin-top    : var(--vspace-1_5);
+    margin-bottom : var(--vspace-0_5);
+}
+
+h5, .h5,
+h6, .h6 {
+    margin-top    : var(--vspace-1_25);
+    margin-bottom : var(--vspace-0_5);
+}
+
+h1, .h1 {
+    font-size      : var(--text-display-1);
+    line-height    : var(--vspace-2);
+    letter-spacing : -.015em;
+}
+
+@media screen and (max-width: 500px) {
+    h1, .h1 {
+        font-size   : var(--text-xxxl);
+        line-height : calc(1.625 * var(--space));
+    }
+}
+
+h2, .h2 {
+    font-size      : var(--text-xxl);
+    line-height    : var(--vspace-1_5);
+    letter-spacing : -.015em;
+}
+
+h3, .h3 {
+    font-size   : var(--text-xl);
+    line-height : var(--vspace-1_25);
+}
+
+h4, .h4 {
+    font-size   : var(--text-lg);
+    line-height : var(--vspace-1);
+}
+
+h5, .h5 {
+    font-size   : var(--text-md);
+    line-height : var(--vspace-0_875);
+}
+
+h6, .h6 {
+    font-size      : var(--text-sm);
+    font-weight    : 600;
+    line-height    : var(--vspace-0_75);
+    text-transform : uppercase;
+    letter-spacing : .2rem;
+}
+
+/* emphasis, italic,
+ * strong, bold and small text
+ */
+em,
+i,
+strong,
+b {
+    font-size   : inherit;
+    line-height : inherit;
+}
+
+em,
+i {
+    font-style : italic;
+}
+
+strong,
+b {
+    font-weight : 600;
+    color       : var(--color-text-dark);
+}
+
+small {
+    font-size   : 80%;
+    font-weight : 400;
+    line-height : var(--vspace-0_5);
+}
+
+/* --------------------------------------------------------------------
+ * ## spacing
+ * -------------------------------------------------------------------- */
+fieldset,
+button,
+.btn {
+    margin-bottom : var(--vspace-0_5);
+}
+
+input,
+textarea,
+select,
+pre,
+blockquote,
+figure,
+figcaption,
+table,
+p,
+ul,
+ol,
+dl,
+form,
+img,
+.video-container,
+.ss-custom-select {
+    margin-bottom : var(--vspace-1);
+}
+
+/* ------------------------------------------------------------------- 
+ * ## style placeholder text
+ * ------------------------------------------------------------------- */
+::-webkit-input-placeholder {
+    /* WebKit, Blink, Edge */
+    color : var(--color-placeholder);
+}
+
+:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color   : var(--color-placeholder);
+    opacity : 1;
+}
+
+::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color   : var(--color-placeholder);
+    opacity : 1;
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color : var(--color-placeholder);
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color : var(--color-placeholder);
+}
+
+::placeholder {
+    /* Most modern browsers support this now. */
+    color : var(--color-placeholder);
+}
+
+/* ------------------------------------------------------------------- 
+ * ## change autocomplete styles in Chrome
+ * ------------------------------------------------------------------- */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    -webkit-text-fill-color : var(--color-1);
+    transition              : background-color 5000s ease-in-out 0s;
+}
