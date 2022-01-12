@@ -15,9 +15,11 @@
     <!--===== CSS =====-->
     <link rel="stylesheet" href="assets/css/vendor.css" />
     <link rel="stylesheet" href="assets/css/glightbox.min.css" />
-    <link rel='stylesheet' href="assets/css/base.css" />
+    <!-- <link rel='stylesheet' href="assets/css/base.css" />
     <link rel="stylesheet" href="assets/css/styles.css" />
-    <link rel='stylesheet' href="assets/css/flare.css" />
+    <link rel='stylesheet' href="assets/css/flare.css" /> -->
+    <link rel='stylesheet' href='assets/css/all.css' />
+    <link rel='stylesheet' href='assets/css/index.css' />
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" />
 </head>
 <body id="top">
@@ -25,17 +27,17 @@
 
     <!-- intro
     ================================================== -->
-    <section id="intro" class="s-intro">
+    <section id="intro" class="intro">
 
-        <div class="s-intro__slider swiper-container">
+        <div class="intro__slider swiper-container">
             <div class="swiper-wrapper">
-                <div class="s-intro__slide swiper-slide" style="background-image: url(assets/img/beekeeper-suit.jpg);"></div>
-                <div class="s-intro__slide swiper-slide" style="background-image: url(assets/img/hive.jpg);"></div>
-                <div class="s-intro__slide swiper-slide" style="background-image: url(assets/img/hive2.jpg);"></div>
+                <div class="intro__slide swiper-slide" style="background-image: url(assets/img/beekeeper-suit.jpg);"></div>
+                <div class="intro__slide swiper-slide" style="background-image: url(assets/img/hive.jpg);"></div>
+                <div class="intro__slide swiper-slide" style="background-image: url(assets/img/hive2.jpg);"></div>
             </div>
         </div>
 
-        <div class="row s-intro__content">
+        <div class="row intro__content">
             <div class="column">
 
                 <div class="text-pretitle">
@@ -48,38 +50,58 @@
                 & amazing for you.
                 </h1>
 
-                <div class="s-intro__content-bottom">
+                <div class="intro__content-bottom">
 
-                    <div class="s-intro__content-bottom-block">
+                    <div class="intro__content-bottom-block">
 
                         <h5>Follow Us</h5>
 
                         <ul class="social">
-                            <li><a href="">FB</a></li>
-                            <li><a href="">TW</a></li>
-                            <li><a href="">IG</a></li>
-                            <li><a href="">DB</a></li>
-                            <li><a href="">BH</a></li>
+                            <li>
+                                <a href="">
+                                    <i class="bx bxl-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="bx bxl-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="bx bxl-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="bx bxl-dribbble"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="bx bxl-behance"></i>
+                                </a>
+                            </li>
                         </ul>
 
-                    </div> <!-- end s-intro-content__bottom-block -->
+                    </div> <!-- end intro-content__bottom-block -->
 
-                </div> <!-- end s-intro-content__bottom -->
+                </div> <!-- end intro-content__bottom -->
 
             </div>
-        </div> <!-- s-intro__content -->
+        </div> <!-- intro__content -->
 
-        <div class="s-intro__scroll">
+        <div class="intro__scroll">
             <a href="#hidden" class="smoothscroll">
                 Scroll For More
             </a>
-        </div> <!-- s-intro__scroll -->
+        </div> <!-- intro__scroll -->
 
-    </section> <!-- end s-intro -->
+    </section> <!-- end intro -->
 
     <!-- about
     ================================================== -->
-    <section id="about" class="s-about">
+    <section id="about" class="about">
 
         <div class="row">
             <div class="column large-12">
@@ -90,7 +112,7 @@
 
             </div>
 
-            <div class="column large-6 w-900-stack s-about__intro-text">
+            <div class="column large-6 w-900-stack about__intro-text">
                 <h1 class="display-1" data-aos="fade-up">
                     Flare is a branding agency based in somewhere. We design thoughtful digital experiences and beautiful brand aesthetics.
                 </h1>
@@ -103,12 +125,12 @@
                 </p>
             </div>
 
-            <div class="column large-6 w-900-stack s-about__photo-block">
-                <div class="s-about__photo" data-aos="fade-up"></div>
+            <div class="column large-6 w-900-stack about__photo-block">
+                <div class="about__photo" data-aos="fade-up"></div>
             </div>
         </div>
 
-        <div class="row block-large-1-2 block-tab-full s-about__process item-list">
+        <div class="row block-large-1-2 block-tab-full about__process item-list">
             <div class="column item item-process" data-aos="fade-up">
                 <h3 class="item-title">Define</h3>
                 <p>
@@ -147,11 +169,11 @@
             </div>
         </div>
 
-    </section> <!-- end s-about -->
+    </section> <!-- end about -->
 
     <!-- services
     ================================================== -->
-    <section id="services" class="s-services">
+    <section id="services" class="services">
 
         <div class="row">
             <div class="column large-12">
@@ -175,7 +197,7 @@
             </div>
         </div>
 
-        <div class="row block-large-1-2 block-tab-full s-services__services item-list">
+        <div class="row block-large-1-2 block-tab-full services__services item-list">
             <div class="column item item-service" data-aos="fade-up">
                 <i class="bx bx-hive service-icon-i"></i>
                 <h3 class="item-title">Bees</h3>
@@ -239,11 +261,11 @@
             </div>
         </div>
 
-    </section> <!-- end s-services -->
+    </section> <!-- end services -->
 
-    <section id="portfolio" class="s-portfolio">
+    <section id="portfolio" class="portfolio">
 
-        <div class="row s-porfolio__top">
+        <div class="row porfolio__top">
             <div class="column large-6 w-900-stack">
                 <div class="section-title" data-num="03" data-aos="fade-up">
                     <h3 class="h6">Recent Works</h3>
@@ -255,16 +277,15 @@
                     free to check them out.
                 </h1>
             </div>
-        </div> <!-- end s-portfolio__top-->
+        </div> <!-- end portfolio__top-->
 
-        <div class="row s-portfolio__list block-large-1-2 block-tab-full collapse">
+        <div class="row portfolio__list block-large-1-2 block-tab-full collapse">
 
             <div class="column" data-aos="fade-up">
                 <div class="folio-item">
                     <div class="folio-item__thumb">
-                        <a class="folio-item__thumb-link" href="https://demo.antonionardini.com/demo/flare/images/portfolio/gallery/g-red-wheel.jpg" data-size="1050x700">
-                            <img src="https://demo.antonionardini.com/demo/flare/images/portfolio/red-wheel.jpg" 
-                                 srcset="https://demo.antonionardini.com/demo/flare/images/portfolio/red-wheel.jpg 1x, https://demo.antonionardini.com/demo/flare/images/portfolio/red-wheel@2x.jpg 2x" alt="">
+                        <a class="folio-item__thumb-link" href="assets/img/beekeeper-suit.jpg">
+                            <img src="assets/img/beekeeper-suit.jpg" alt="" />
                         </a>
                     </div>
                     <div class="folio-item__info">
@@ -280,9 +301,25 @@
             <div class="column" data-aos="fade-up">
                 <div class="folio-item">
                     <div class="folio-item__thumb">
-                        <a class="folio-item__thumb-link" href="https://demo.antonionardini.com/demo/flare/images/portfolio/gallery/g-music-life.jpg" data-size="1050x700">
-                            <img src="https://demo.antonionardini.com/demo/flare/images/portfolio/music-life.jpg" 
-                                 srcset="https://demo.antonionardini.com/demo/flare/images/portfolio/music-life.jpg 1x, https://demo.antonionardini.com/demo/flare/images/portfolio/music-life@2x.jpg 2x" alt="">
+                        <a class="folio-item__thumb-link" href="assets/img/beekeeper-suit.jpg">
+                            <img src="assets/img/beekeeper-suit.jpg" alt="" />
+                        </a>
+                    </div>
+                    <div class="folio-item__info">
+                        <div class="folio-item__cat">Branding</div>
+                        <h4 class="folio-item__title">The Red Wheel</h4>
+                    </div>
+                    <a href="https://www.behance.net/" class="folio-item__project-link">Project Link</a>
+                    <div class="folio-item__caption">
+                        <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+                    </div>
+                </div>
+            </div> <!-- end column -->
+            <div class="column" data-aos="fade-up">
+                <div class="folio-item">
+                    <div class="folio-item__thumb">
+                        <a class="folio-item__thumb-link" href="assets/img/hive2.jpg">
+                            <img src="assets/img/hive2.jpg" alt="" />
                         </a>
                     </div>
                     <div class="folio-item__info">
@@ -298,9 +335,25 @@
             <div class="column" data-aos="fade-up">
                 <div class="folio-item">
                     <div class="folio-item__thumb">
-                        <a class="folio-item__thumb-link" href="https://demo.antonionardini.com/demo/flare/images/portfolio/gallery/g-oi-logo.jpg" data-size="1050x700">
-                            <img src="https://demo.antonionardini.com/demo/flare/images/portfolio/oi-logo.jpg.jpg" 
-                                 srcset="https://demo.antonionardini.com/demo/flare/images/portfolio/oi-logo.jpg 1x, https://demo.antonionardini.com/demo/flare/images/portfolio/oi-logo@2x.jpg 2x" alt="">
+                        <a class="folio-item__thumb-link" href="assets/img/hive2.jpg">
+                            <img src="assets/img/hive2.jpg" alt="" />
+                        </a>
+                    </div>
+                    <div class="folio-item__info">
+                        <div class="folio-item__cat">Frontend Design</div>
+                        <h4 class="folio-item__title">Music Life</h4>
+                    </div>
+                    <a href="https://www.behance.net/" class="folio-item__project-link">Project Link</a>
+                    <div class="folio-item__caption">
+                        <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+                    </div>
+                </div>
+            </div> <!-- end column -->
+            <div class="column" data-aos="fade-up">
+                <div class="folio-item">
+                    <div class="folio-item__thumb">
+                        <a class="folio-item__thumb-link" href="assets/img/hive.jpg">
+                            <img src="assets/img/hive.jpg" alt="" />
                         </a>
                     </div>
                     <div class="folio-item__info">
@@ -316,52 +369,13 @@
             <div class="column" data-aos="fade-up">
                 <div class="folio-item">
                     <div class="folio-item__thumb">
-                        <a class="folio-item__thumb-link" href="https://demo.antonionardini.com/demo/flare/images/portfolio/gallery/g-corrugated-sheets.jpg" data-size="1050x700">
-                            <img src="https://demo.antonionardini.com/demo/flare/images/portfolio/corrugated-sheets.jpg" 
-                                 srcset="https://demo.antonionardini.com/demo/flare/images/portfolio/corrugated-sheets.jpg 1x, https://demo.antonionardini.com/demo/flare/images/portfolio/corrugated-sheets@2x.jpg 2x" alt="">
+                        <a class="folio-item__thumb-link" href="assets/img/hive.jpg">
+                            <img src="assets/img/hive.jpg" alt="" />
                         </a>
                     </div>
                     <div class="folio-item__info">
-                        <div class="folio-item__cat">Frontend Design</div>
-                        <h4 class="folio-item__title">Corrugated Sheets</h4>
-                    </div>
-                    <a href="https://www.behance.net/" title="Project Link" class="folio-item__project-link">Project Link</a>
-                    <div class="folio-item__caption">
-                        <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
-                    </div>
-                </div>
-            </div> <!-- end column -->
-            <div class="column" data-aos="fade-up">
-                <div class="folio-item">
-                    <div class="folio-item__thumb">
-                        <a class="folio-item__thumb-link" href="https://demo.antonionardini.com/demo/flare/images/portfolio/gallery/g-woodcraft.jpg" data-size="1050x700">
-                            <img src="https://demo.antonionardini.com/demo/flare/images/portfolio/woodcraft.jpg" 
-                                 srcset="https://demo.antonionardini.com/demo/flare/images/portfolio/woodcraft.jpg 1x, https://demo.antonionardini.com/demo/flare/images/portfolio/woodcraft@2x.jpg 2x" alt="">
-                        </a>
-                    </div>
-                    <div class="folio-item__info">
-                        <div class="folio-item__cat">Frontend Design</div>
-                        <h4 class="folio-item__title">Wooocraft</h4>
-                    </div>
-                    <a href="https://www.behance.net/" title="Project Link" class="folio-item__project-link">
-                        Project Link
-                    </a>
-                    <div class="folio-item__caption">
-                        <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
-                    </div>
-                </div>
-            </div> <!-- end column -->
-            <div class="column" data-aos="fade-up">
-                <div class="folio-item">
-                    <div class="folio-item__thumb">
-                        <a class="folio-item__thumb-link" href="https://demo.antonionardini.com/demo/flare/images/portfolio/gallery/g-lamp.jpg" data-size="1050x700">
-                            <img src="https://demo.antonionardini.com/demo/flare/images/portfolio/lamp.jpg" 
-                                 srcset="https://demo.antonionardini.com/demo/flare/images/portfolio/lamp.jpg 1x, https://demo.antonionardini.com/demo/flare/images/portfolio/lamp@2x.jpg 2x" alt="">
-                        </a>
-                    </div>
-                    <div class="folio-item__info">
-                        <div class="folio-item__cat">Frontend Design</div>
-                        <h4 class="folio-item__title">The Lamp</h4>
+                        <div class="folio-item__cat">Branding</div>
+                        <h4 class="folio-item__title">OI Logo</h4>
                     </div>
                     <a href="https://www.behance.net/" title="Project Link" class="folio-item__project-link">Project Link</a>
                     <div class="folio-item__caption">
@@ -372,42 +386,175 @@
 
         </div> <!-- folio-list -->
 
-    </section> <!-- end s-portfolio -->
+    </section> <!-- end portfolio -->
+
+    <!-- faq
+    ================================================== -->
+    <section class="questions" id="faq">
+        <div class="row faq__top">
+            <div class="column large-6 w-900-stack">
+                <div class="section-title" data-num="04" data-aos="fade-up">
+                    <h3 class="h6">Frequently Asked Questions</h3>
+                </div>
+            </div>
+            <div class="column large-6 w-900-stack">
+                <h1 class="display-1" data-aos="fade-up">
+                    Here are some common questions we are asked.
+                </h1>
+            </div>
+        </div>
+
+        <div class="row faq__list block-large-1-2 block-tab-full collapse">
+
+            <div class="column questions__group">
+                <div class="questions__item">
+                    <header class="questions__header">
+                        <div class="questions__icon">
+                            <i class="bx bx-chevron-down"></i>
+                        </div>
+                        <h3 class="questions__item-title">
+                            My flowers are falling off or dying?
+                        </h3>
+                    </header>
+
+                    <div class="questions__content">
+                        <p class="questions__description">
+                            Plants are easy way to add color energy and transform your 
+                            space but which planet is for you. Choosing the right plant.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="questions__item">
+                    <header class="questions__header">
+                        <div class="questions__icon">
+                            <i class="bx bx-chevron-down"></i>
+                        </div>
+                        <h3 class="questions__item-title">
+                            What causes leaves to become pale?
+                        </h3>
+                    </header>
+
+                    <div class="questions__content">
+                        <p class="questions__description">
+                            Plants are easy way to add color energy and transform your 
+                            space but which planet is for you. Choosing the right plant.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="questions__item">
+                    <header class="questions__header">
+                        <div class="questions__icon">
+                            <i class="bx bx-chevron-down"></i>
+                        </div>
+                        <h3 class="questions__item-title">
+                            What causes brown crispy leaves?
+                        </h3>
+                    </header>
+
+                    <div class="questions__content">
+                        <p class="questions__description">
+                            Plants are easy way to add color energy and transform your 
+                            space but which planet is for you. Choosing the right plant.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column questions__group">
+                <div class="questions__item">
+                    <header class="questions__header">
+                        <div class="questions__icon">
+                            <i class="bx bx-chevron-down"></i>
+                        </div>
+                        <h3 class="questions__item-title">
+                            How do i choose a plant?
+                        </h3>
+                    </header>
+
+                    <div class="questions__content">
+                        <p class="questions__description">
+                            Plants are easy way to add color energy and transform your 
+                            space but which planet is for you. Choosing the right plant.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="questions__item">
+                    <header class="questions__header">
+                        <div class="questions__icon">
+                            <i class="bx bx-chevron-down"></i>
+                        </div>
+                        <h3 class="questions__item-title">
+                            How do I change the pots?
+                        </h3>
+                    </header>
+
+                    <div class="questions__content">
+                        <p class="questions__description">
+                            Plants are easy way to add color energy and transform your 
+                            space but which planet is for you. Choosing the right plant.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="questions__item">
+                    <header class="questions__header">
+                        <div class="questions__icon">
+                            <i class="bx bx-chevron-down"></i>
+                        </div>
+                        <h3 class="questions__item-title">
+                            Why are gnats flying around my plant?
+                        </h3>
+                    </header>
+
+                    <div class="questions__content">
+                        <p class="questions__description">
+                            Plants are easy way to add color energy and transform your 
+                            space but which planet is for you. Choosing the right plant.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
 
     <!-- contact
     ================================================== -->
-    <section class="s-contact">
+    <section class="contact">
 
-        <div class="row narrower s-contact__top h-text-center">
+        <div class="row narrower contact__top h-text-center">
             <div class="column">
                 <h3 class="h6">Get In Touch</h3>
                 <h1 class="display-1">
-                Have an idea or an epic project in mind? Talk to
-                us. Let us work together and make something great.
-                Shoot us a message at
+                    Have an idea or an epic project in mind? Talk to
+                    us. Let us work together and make something great.
+                    Shoot us a message at
                 </h1>
             </div>
-        </div> <!-- s-footer__top -->
+        </div> <!-- footer__top -->
 
         <div class="row h-text-center">
             <div class="column">
-                <p class="s-contact__email">
+                <p class="contact__email">
                     <a href="mailto:#0">hello@flare.com</a>
                 </p>
             </div>
         </div>
 
-    </section>  <!-- end s-contact -->
+    </section>  <!-- end contact -->
 
 
     <!-- footer
     ================================================== -->
-    <footer class="s-footer">
+    <footer class="footer">
         <div class="row row-y-top">
 
             <div class="column large-8 medium-12">
                 <div class="row">
-                    <div class="column large-7 tab-12 s-footer__block">
+                    <div class="column large-7 tab-12 footer__block">
                         <h4 class="h6">Where to Find Us</h4>
         
                         <p>
@@ -418,10 +565,10 @@
                         </p>
                     </div>
         
-                    <div class="column large-5 tab-12 s-footer__block">
+                    <div class="column large-5 tab-12 footer__block">
                         <h4 class="h6">Follow Us</h4 class="h6">
         
-                        <ul class="s-footer__list">
+                        <ul class="footer__list">
                             <li><a href="#0">Facebook</a></li>
                             <li><a href="#0">Twitter</a></li>
                             <li><a href="#0">Instagram</a></li>
@@ -431,20 +578,20 @@
                 </div>
             </div>
 
-            <div class="column large-4 medium-12 s-footer__block--end">
+            <div class="column large-4 medium-12 footer__block--end">
                 <a href="mailto:#0" class="btn h-full-width">Let's Talk</a>
 
-                <div class="ss-copyright">
+                <div class="copyright">
                     <span>Design by <a href="https://www.styleshout.com/">StyleShout</a></span>
                     <span>Improved By <a href="https://antonionardini.com">Antonio Nardini</a></span> 
                 </div>
             </div>
 
-            <div class="ss-go-top">
+            <div class="go-top">
                 <a class="smoothscroll" title="Back to Top" href="#top">
                     top
                 </a>
-            </div> <!-- end ss-go-top -->
+            </div> <!-- end go-top -->
 
         </div>
     </footer>
@@ -452,5 +599,6 @@
     <script src="assets/js/plugins.js"></script>
     <script src="assets/js/glightbox.min.js"></script>
     <script src="assets/js/main.js"></script>
+    
 </body>
 </html>

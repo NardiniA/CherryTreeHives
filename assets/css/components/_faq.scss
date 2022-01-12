@@ -1,0 +1,124 @@
+/*=============== QUESTIONS ===============*/
+.questions {
+    background-color: var(--color-bg);
+    padding-top: var(--vspace-2);
+    padding-bottom: calc(7 * var(--space));
+
+    &__container{
+        gap: 1.5rem;
+        padding: 1.5rem 0;
+
+        @media (min-width: 768px) {
+            grid-template-columns: repeat(2, 1fr);
+            align-items: flex-start;
+        }
+
+        @media (min-width: 992px) {
+            padding: 1rem 0 4rem;
+        }
+    }
+
+    &__group{
+        display: flex;
+        flex-direction: column;
+        row-gap: 1.5rem;
+
+        @media (min-width: 992px) {
+            row-gap: 2rem;
+        }
+    }
+
+    &__item{
+        border-radius: .25rem;
+        margin: 0;
+
+        @media (min-width: 768px) {
+            margin: 0 2rem;
+        }
+    }
+
+    &__item-title{
+        font-size: var(--text-sm);
+        font-weight: 500;
+        margin: 0;
+        color: #fff;
+
+        @media (min-width: 768px) {
+            font-size: var(--text-size);
+        }
+    }
+
+    &__icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 42px;
+        min-width: 42px;
+        max-width: 42px;
+        height: 42px;
+        background-color: var(--color-1);
+        color: #fff;
+        margin-right: 24px;
+
+        i {
+            font-size: 22px;
+            transition-duration: 0.3s;
+        }
+    }
+
+    &__description{
+        margin: 0;
+        padding: 0 1.25rem 1.25rem 2.5rem;
+        color: #fff;
+
+        @media (min-width: 992px) {
+            padding: 0px 30px 40px 95px;
+        }
+    }
+
+    &__header{
+        display: flex;
+        align-items: center;
+        column-gap: .5rem;
+        padding: .75rem 1rem;
+        cursor: pointer;
+
+        @media (min-width: 992px) {
+            padding: 30px;
+        }
+    }
+
+    &__content{
+        overflow: hidden;
+        height: 0;
+    }
+
+    &__item,
+    &__header,
+    &__item-title,
+    &__icon,
+    &__description,
+    &__content{
+        transition: .3s;
+    }
+
+    &__item:hover{
+        box-shadow: 0 2px 8px hsla(152, 4%, 15%, .15);
+    }
+
+    /*Rotate icon, change color of titles and background*/
+    .accordion-open &__header,
+    .accordion-open &__content{
+        background-color: var(--color-1);
+    }
+
+    .accordion-open &__icon i {
+        transform: rotate(180deg);
+    }
+
+    @media (min-width: 992px) {
+        &__title{
+            text-align: initial;
+        }
+    }
+}
