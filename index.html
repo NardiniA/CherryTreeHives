@@ -525,24 +525,68 @@
     ================================================== -->
     <section class="contact">
 
-        <div class="row narrower contact__top h-text-center">
+        <div class="row narrower contact__top h-text-center contact__header">
             <div class="column">
                 <h3 class="h6">Get In Touch</h3>
                 <h1 class="display-1">
                     Have an idea or an epic project in mind? Talk to
                     us. Let us work together and make something great.
-                    Shoot us a message at
+                    Shoot us a message.
                 </h1>
             </div>
         </div> <!-- footer__top -->
 
-        <div class="row h-text-center">
+        <!-- <div class="row h-text-center">
             <div class="column">
                 <p class="contact__email">
                     <a href="mailto:#0">hello@flare.com</a>
                 </p>
             </div>
-        </div>
+        </div> -->
+        <form class="form">
+            <div class="row form__row block-large-1-2 block-tab-full collapse">
+                <div class="column space-between">
+                    <div class="form__group">
+                        <input type="text" placeholder=" " class="form__input" />
+                        <label class="form__label">Name</label>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="form__group">
+                        <input type="text" placeholder=" " class="form__input" />
+                        <label class="form__label">Subject</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row form__row block-large-1-2 block-tab-full collapse">
+                <div class="column space-between">
+                    <div class="form__group">
+                        <input type="email" placeholder=" " class="form__input" />
+                        <label class="form__label">Email</label>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="form__group">
+                        <input type="text" placeholder=" " class="form__input" />
+                        <label class="form__label">Item</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row form__row block-tab-full collapse form__area">
+                <div class="column">
+                    <div class="form__group form__area">
+                        <textarea name="message" placeholder=" " class="form__input"></textarea>
+                        <label class="form__label">Message</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row form__button">
+                <button type="submit" class="btn">Send Message</button>
+            </div>
+        </form>
 
     </section>  <!-- end contact -->
 
@@ -599,6 +643,6 @@
     <script src="assets/js/plugins.js"></script>
     <script src="assets/js/glightbox.min.js"></script>
     <script src="assets/js/main.js"></script>
-    
+
 </body>
 </html>
