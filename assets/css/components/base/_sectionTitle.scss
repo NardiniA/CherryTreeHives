@@ -1,0 +1,50 @@
+.section-title {
+	display: block;
+	margin-bottom: var(--vspace-2);
+	position: relative;
+}
+.section-title::before {
+	content: attr(data-num);
+	font-family: var(--font-2);
+	font-weight: 600;
+	font-size: calc(var(--text-size) * 10);
+	line-height: 1;
+	letter-spacing: -0.02em;
+	color: var(--color-text);
+	opacity: 0.1;
+}
+.section-title h3 {
+	z-index: 2;
+	font-weight: 500;
+	color: var(--color-1);
+	padding-bottom: 2em;
+	margin-top: 0;
+	position: absolute;
+	left: 1em;
+	bottom: 0;
+}
+.display-1 {
+	font-size: var(--text-xxl);
+	font-weight: 500;
+	line-height: var(--vspace-1_75);
+	margin-top: 0;
+}
+
+@media screen and (max-width: 1000px) {
+	.section-title::before {
+		font-size: calc(var(--text-size) * 8);
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.section-title {
+		margin-bottom: var(--vspace-1);
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.display-1 {
+		font-size: var(--text-xl);
+		line-height: var(--vspace-1_5);
+	}
+}

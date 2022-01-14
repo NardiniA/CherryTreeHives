@@ -1,0 +1,41 @@
+.btn {
+	--btn-height: var(--vspace-btn);
+	display: inline-block;
+	font-family: var(--font-2);
+	font-weight: 600;
+	font-size: var(--text-xs);
+	text-transform: uppercase;
+	letter-spacing: 0.5em;
+	height: var(--btn-height);
+	line-height: calc(var(--btn-height) - 0.4rem);
+	padding: 0 3.2rem;
+	margin: 0 0.4rem var(--vspace-0_5) 0;
+	color: var(--color-btn-text);
+	text-decoration: none;
+	text-align: center;
+	white-space: nowrap;
+	cursor: pointer;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-color: var(--color-btn);
+	border: 0.2rem solid var(--color-btn);
+}
+.btn:focus,
+.btn:hover {
+	background-color: var(--color-btn-hover);
+	border-color: var(--color-btn-hover);
+	color: var(--color-btn-hover-text);
+	outline: 0;
+}
+.btn.h-full-width {
+	width: 100%;
+	margin-right: 0;
+}
+.btn--medium {
+	--btn-height: calc(var(--vspace-btn) + var(--vspace-0_25));
+}
+.btn--large {
+	--btn-height: calc(var(--vspace-btn) + var(--vspace-0_5));
+}

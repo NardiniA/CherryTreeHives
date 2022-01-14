@@ -1,0 +1,41 @@
+.item-list {
+	margin-top: var(--vspace-2_5);
+}
+
+.item-list .item {
+	padding-right: 8.6rem;
+	margin-bottom: var(--vspace-0_5);
+}
+
+@media screen and (max-width: 1100px) {
+	.item-list .item {
+		padding-right: 2rem;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.item-list .item {
+		margin-bottom: 0;
+	}
+
+	.item-list .item {
+		padding-right: var(--gutter-md);
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.item-list .item {
+		padding-right: var(--gutter-mob);
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.item-title {
+		font-size: var(--text-md);
+		line-height: var(--vspace-1);
+	}
+
+	.item-list .item {
+		padding-right: 0;
+	}
+}

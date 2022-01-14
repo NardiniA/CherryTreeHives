@@ -1,0 +1,47 @@
+.contact {
+	background-color: var(--color-1);
+	padding-top: calc(6 * var(--space));
+	padding-bottom: var(--vspace-2);
+}
+.contact__top .h6 {
+	color: #000;
+	margin-top: 0;
+	margin-bottom: var(--vspace-1);
+}
+.contact__email {
+	margin-top: var(--vspace-1_5);
+	font-family: var(--font-2);
+	font-size: calc(var(--text-size) * 6.6);
+	font-weight: 500;
+	letter-spacing: -0.01em;
+	line-height: 1;
+}
+.contact__email a {
+	color: #fff;
+	border-bottom: 2px solid transparent;
+}
+.contact__email a:focus,
+.contact__email a:hover {
+	border-bottom: 2px solid #fff;
+}
+@media screen and (max-width: 1600px) {
+	.contact__email {
+		font-size: calc(var(--text-size) * 6);
+	}
+}
+@media screen and (max-width: 1200px) {
+	.contact__email {
+		font-size: 10vw;
+	}
+}
+@media screen and (max-width: 400px) {
+	.contact {
+		padding-top: var(--vspace-4);
+	}
+}
+
+.contact__header {
+    margin-bottom: var(--vspace-2);
+}
+
+@import "./contactForm";

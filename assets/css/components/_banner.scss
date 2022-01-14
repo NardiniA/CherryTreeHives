@@ -1,0 +1,14 @@
+.banner {
+    padding-top: 130px;
+    padding-bottom: 80px;
+
+    > .row {
+        text-align: center;
+    }
+
+    &__title {
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+    }
+}

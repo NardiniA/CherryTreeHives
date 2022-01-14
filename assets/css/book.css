@@ -1,0 +1,31 @@
+.banner {
+  padding-top: 130px;
+  padding-bottom: 80px;
+}
+
+.banner > .row {
+  text-align: center;
+}
+
+.banner__title {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.booking__form {
+  padding-top: calc(2 * var(--space));
+  background-color: var(--color-bg);
+}
+
+.booking__form-top {
+  margin-bottom: var(--vspace-1);
+}
+
+@media screen and (max-width: 360px) {
+  .booking__form-row {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+/*# sourceMappingURL=book.css.map */
