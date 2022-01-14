@@ -22,6 +22,39 @@
 </head>
 <body id="top">
 
+    <!-- # site header 
+    ================================================== -->
+    <header class="header">
+
+        <div class="row header__inner">
+
+            <div class="header__block">
+                <div class="header__logo">
+                    <a class="logo" href="#">
+                        <img src="https://www.styleshout.com/templates/preview/Booth_1_0_0/images/logo.svg" alt="Homepage">
+                    </a>
+                </div>
+
+                <a class="header__menu-toggle" href="#0"><span>Menu</span></a>
+            </div> <!-- end header__block -->
+
+            <nav class="header__nav">
+                <ul>
+                    <li class="current"><a href="#intro" class="smoothscroll">Intro</a></li>
+                    <li><a href="#about" class="smoothscroll">About</a></li>
+                    <li><a href="#pricing" class="smoothscroll">Pricing</a></li>
+                    <li><a href="#download" class="smoothscroll">Download</a></li>
+                </ul>
+            </nav>
+
+            <div class="header__cta">
+                <a href="#download" class="header__btn header__btn-stroke header__cta-btn smoothscroll">Book Now</a>
+            </div>
+
+        </div> <!-- end header__inner -->
+
+    </header> <!-- end header -->
+
 
     <!-- intro
     ================================================== -->
@@ -728,6 +761,65 @@
     <script src="assets/js/plugins.js"></script>
     <script src="assets/js/glightbox.min.js"></script>
     <script src="assets/js/main.js"></script>
+
+    <script>
+        const hdr = document.querySelector('.header');
+
+        window.addEventListener('scroll', function () {
+
+            let loc = window.scrollY;
+
+            if (loc > 50) {
+                hdr.classList.add('sticky');
+            } else {
+                hdr.classList.remove('sticky');
+            }
+
+            if (loc > 70) {
+                hdr.classList.add('offset');
+            } else {
+                hdr.classList.remove('offset');
+            }
+
+            if (loc > 200) {
+                hdr.classList.add('scrolling');
+            } else {
+                hdr.classList.remove('scrolling');
+            }
+
+        });
+
+        const toggleButton = document.querySelector('.header__menu-toggle');
+        const mainNavWrap = document.querySelector('.header__nav');
+        const siteBody = document.querySelector('body');
+
+        toggleButton.addEventListener('click', function(event) {
+            event.preventDefault();
+            toggleButton.classList.toggle('iclicked');
+            siteBody.classList.toggle('menu-iopen');
+        });
+
+        mainNavWrap.querySelectorAll('.header__nav a').forEach(function(link) {
+
+            link.addEventListener("click", function(event) {
+
+                // at 800px and below
+                if (window.matchMedia('(max-width: 800px)').matches) {
+                    toggleButton.classList.toggle('iclicked');
+                    siteBody.classList.toggle('menu-iopen');
+                }
+            });
+        });
+
+        window.addEventListener('resize', function() {
+
+            // above 800px
+            if (window.matchMedia('(min-width: 801px)').matches) {
+                if (siteBody.classList.contains('menu-iopen')) siteBody.classList.remove('menu-iopen');
+                if (toggleButton.classList.contains('iclicked')) toggleButton.classList.remove('iclicked');
+            }
+        });
+    </script>
 
 </body>
 </html>

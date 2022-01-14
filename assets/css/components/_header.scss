@@ -1,0 +1,382 @@
+/* ===================================================================
+* # SITE HEADER
+*
+*
+* ------------------------------------------------------------------- */
+.header {
+    --header-height  : 64px;
+    --logo-width     : 90px;
+    z-index          : 100;
+    background-color : transparent;
+    height           : 74px;
+    width            : 100%;
+    position         : absolute;
+    top              : 3.2rem;
+    left             : 0;
+
+    @media screen and (max-width: 800px) {
+        --logo-width : 80px;
+        top          : 1.6rem;
+    }
+
+    &.sticky {
+        --header-height  : 80px;
+        --logo-width     : 82px;
+        opacity          : 0;
+        visibility       : hidden;
+        background-color : var(--color-gray-17);
+        position         : fixed;
+        top              : 0;
+        left             : 0;
+
+        @media screen and (max-width: 500px) {
+            --header-height : 76px;
+        }
+
+        &.scrolling {
+            opacity    : 1;
+            visibility : visible;
+        }
+
+        .header__inner {
+            max-width: var(--width-grid-max) !important;
+
+            @media screen and (max-width: 1800px) {
+                max-width: var(--width-grid-max) !important;
+            }
+
+            @media screen and (max-width: 1700px) {
+                max-width: var(--width-grid-max) !important;
+            }
+
+            @media screen and (max-width: 1600px) {
+                max-width: var(--width-grid-max) !important;
+            }
+        }
+
+        .header__cta {
+            margin-right : 0;
+
+            .header__btn {
+                font-size        : calc(1.8rem * 0.8333);
+                background-color : var(--color-1) !important;
+                border-color     : transparent;
+
+                &:hover, &:focus {
+                    background-color: var(--color-white) !important;
+                    border-color: var(--color-white) !important;
+                    color: var(--color-1) !important;
+                }
+            }
+        }
+    }
+
+    &.offset {
+        transform  : translateY(-100%);
+        transition : all 0.5s;
+    }
+
+    &.scrolling {
+        transform : translateY(0);
+    }
+
+    &__inner {
+        max-width: var(--width-wider);
+        align-items : center;
+        padding     : 0 2.2rem;
+        height: 100%;
+
+        @media screen and (max-width: 1800px) {
+            max-width: 1500px;
+        }
+
+        @media screen and (max-width: 1700px) {
+            max-width: 1420px;
+        }
+
+        @media screen and (max-width: 1600px) {
+            max-width: 1360px;
+        }
+
+        @media screen and (max-width: 800px) {
+            max-width : none;
+            width     : 100%;
+            margin    : 0;
+            padding   : 0;
+        }
+    }
+
+    &__block {
+        z-index : 101;
+
+        @media screen and (max-width: 800px) {
+            width            : 100%;
+            height           : 74px;
+            background-color : transparent;
+        }
+    }
+
+    /* --------------------------------------------------------------------
+    * ## logo
+    * -------------------------------------------------------------------- */
+    &__logo {
+        z-index     : 3;
+        line-height : 1;
+        transform   : translate(4px, -2px);
+
+        @media screen and (max-width: 400px) {
+            transform : translate(6.1vw, -50%);
+        }
+
+        @media screen and (max-width: 800px) {
+            position  : absolute;
+            left      : 0;
+            top       : 50%;
+            transform : translate(4.2rem, -50%);
+        }
+
+        a {
+            display : block;
+            margin  : 0;
+            padding : 0;
+            outline : 0;
+            border  : none;
+        }
+
+        img {
+            width          : 90px;
+            margin         : 0;
+            vertical-align : bottom;
+        }
+    }
+
+
+    /* --------------------------------------------------------------------
+    * ## main navigation
+    * -------------------------------------------------------------------- */
+    &__nav {
+        margin-left : 4rem;
+
+        ul {
+            list-style : none;
+            display    : inline-flex;
+            flex-flow  : row nowrap;
+            margin     : 0;
+            padding    : 0;
+
+            @media screen and (max-width: 400px) {
+                display     : block;
+                margin-left : 0;
+                transform   : translateY(-2rem);
+                opacity     : 0;
+                visibility  : hidden;
+            }
+
+            @media screen and (max-width: 800px) {
+                padding-right : 6vw;
+                padding-left  : 6vw;
+            }
+        }
+
+        li {
+            padding-left : 0;
+        }
+
+        a {
+            display             : block;
+            font-size           : 1.6rem;
+            font-weight         : 400;
+            line-height         : 64px;
+            color               : rgba(255, 255, 255, 0.6);
+            padding             : 0 1.2rem;
+            transition-property : color, background-color;
+
+            @media screen and (max-width: 800px) {
+                display     : inline-block;
+                font-size   : calc(1.8rem * 0.9444);
+                line-height : 1;
+                padding     : 1.6rem 0;
+            }
+        }
+
+        .current a {
+            color : white;
+        }
+
+        @media screen and (max-width: 800px) {
+            transform        : scaleY(0);
+            transform-origin : center top;
+            display          : block;
+            background-color : var(--color-bg);
+            width            : 100%;
+            padding-top      : calc(64px + 4rem);
+            padding-right    : 4.2rem;
+            padding-left     : 4.2rem;
+            padding-bottom   : 4rem;
+            margin           : 0;
+            position         : absolute;
+            top              : calc(1.6rem * -1);
+            left             : 0;
+        }
+    }
+
+    /* --------------------------------------------------------------------
+    * ## cta button
+    * -------------------------------------------------------------------- */
+    &__cta {
+        margin-right : 4rem;
+        margin-left  : auto;
+
+        @media screen and (max-width: 1100px) {
+            margin-right : 0;
+        }
+
+        @media screen and (max-width: 800px) {
+            display : none;
+        }
+
+        .header__btn {
+            font-size    : calc(1.8rem * 0.8889);
+            line-height  : calc(5.4rem - 4px);
+            font-weight  : 400;
+            margin       : 0;
+            padding      : 0 3.2rem;
+            border-color : var(--color-white);
+            color        : var(--color-white);
+
+            &:focus, &:hover {
+                background-color : var(--color-1) !important;
+                border-color     : var(--color-1) !important;
+            }
+        }
+    }
+
+    &__btn {
+        display: inline-block;
+        font-family: var(--font-1);
+        font-size: 2.2rem;
+        font-weight: 600;
+        letter-spacing: 0.02em;
+        height: 5.4rem;
+        line-height: calc(5.4rem - 4px);
+        padding: 0 3.6rem;
+        margin: 0 0.4rem 1.6rem 0;
+        text-decoration: none;
+        text-align: center;
+        white-space: nowrap;
+        cursor: pointer;
+        transition: all 0.3s;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+
+        &-stroke {
+            background: transparent !important;
+            font-weight: 500;
+            border: 2px solid var(--color-black);
+        }
+    }
+
+    /* --------------------------------------------------------------------
+    * ## mobile menu toggle
+    * -------------------------------------------------------------------- */
+    &__menu-toggle {
+        display  : none;
+        width    : 6.8rem;
+        height   : 64px;
+        position : absolute;
+        top      : 50%;
+        transform: translateY(-50%);
+        right    : 1.6rem;
+
+        @media screen and (max-width: 800px) {
+            display : block;
+        }
+
+        @media screen and (max-width: 400px) {
+            right : 1.75rem;
+        }
+
+        span {
+            display          : block;
+            background-color : var(--color-white);
+            width            : 22px;
+            height           : 2px;
+            margin-top       : -1px;
+            font             : 0/0 a;
+            text-shadow      : none;
+            color            : transparent;
+            transition       : background-color 0.2s ease-in-out;
+            position         : absolute;
+            right            : 23px;
+            top              : 50%;
+            bottom           : auto;
+            left             : auto;
+
+            &::before, &::after {
+                content             : "";
+                width               : 100%;
+                height              : 100%;
+                background-color    : inherit;
+                transition-duration : 0.2s, 0.2s;
+                transition-delay    : 0.2s, 0s;
+                position            : absolute;
+                left                : 0;
+            }
+
+            &::before {
+                top                 : -8px;
+                transition-property : top, transform;
+            }
+
+            &::after {
+                bottom              : -8px;
+                transition-property : bottom, transform;
+            }
+        }
+
+        /* is clicked 
+        */
+        &.iclicked span {
+            background-color : rgba(255, 255, 255, 0);
+
+            &::before, &::after {
+                background-color : var(--color-white);
+                transition-delay : 0s, 0.2s;
+            }
+
+            &::before {
+                top       : 0;
+                transform : rotate(45deg);
+            }
+
+            &::after {
+                bottom    : 0;
+                transform : rotate(-45deg);
+            }
+        }
+    }
+}
+
+/* ------------------------------------------------------------------- 
+* responsive:
+* site-header
+* ------------------------------------------------------------------- */
+@media screen and (max-width: 800px) {
+    .menu-iopen .header {
+        height : auto;
+    }
+
+    .menu-iopen .header__nav {
+        transform        : scaleY(1);
+        transition       : transform 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+        transition-delay : 0s;
+    }
+
+    .menu-iopen .header__nav ul {
+        transform        : translateY(0);
+        opacity          : 1;
+        visibility       : visible;
+        transition       : all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+        transition-delay : 0.4s;
+    }
+}
