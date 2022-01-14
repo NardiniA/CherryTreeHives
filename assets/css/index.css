@@ -36,11 +36,13 @@
       -ms-flex-direction: column;
           flex-direction: column;
   row-gap: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 @media (min-width: 992px) {
   .questions__group {
     row-gap: 2rem;
+    margin-bottom: 0;
   }
 }
 
@@ -162,8 +164,12 @@
 .form__group {
   position: relative;
   height: 5rem;
-  border-bottom: 1px solid var(--color-bg);
+  border-bottom: 1px solid var(--color-gray-19);
   margin: 0;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
 }
 
 @media (min-width: 801px) {
@@ -180,12 +186,20 @@
   height: 100%;
   padding: 1rem 1rem 1rem 0;
   background: none;
-  color: var(--color-gray-19);
+  color: var(--color-gray-15);
   border: none;
   outline: none;
   z-index: 1;
   font-family: inherit;
   font-size: var(--text-size);
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+}
+
+.form__input:focus {
+  color: var(--color-gray-2);
 }
 
 .form__input:focus + .form__label {
@@ -193,6 +207,11 @@
   left: 0;
   font-size: var(--text-xs);
   z-index: 10;
+  color: var(--color-white);
+}
+
+.form__group:focus-within {
+  border-color: var(--color-white);
 }
 
 .form .form__input:not(:placeholder-shown).form__input:not(:focus) + .form__label {
@@ -206,14 +225,14 @@
   top: 1.6rem;
   width: 100%;
   font-size: var(--text-sm);
-  color: var(--color-gray-15);
+  color: var(--color-gray-19);
   -webkit-transition: .3s;
   transition: .3s;
   font-weight: 600;
 }
 
 .form__area {
-  height: 10.5rem;
+  height: 12.5rem;
 }
 
 .form textarea {
@@ -228,13 +247,13 @@
   margin: 3rem 0 0;
   background-color: var(--color-gray-19);
   border: 0.2rem solid var(--color-gray-19);
-  color: #fff;
+  color: var(--color-white);
 }
 
 .form__button button:hover, .form__button button:focus {
-  background-color: #fff;
-  border: 0.2rem solid #fff;
-  color: #000;
+  background-color: var(--color-white);
+  border: 0.2rem solid var(--color-white);
+  color: var(--color-black);
 }
 
 @media (min-width: 801px) {
