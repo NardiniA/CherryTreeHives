@@ -164,17 +164,16 @@
             margin     : 0;
             padding    : 0;
 
+            @media screen and (max-width: 800px) {
+                flex-direction: column;
+            }
+
             @media screen and (max-width: 400px) {
                 display     : block;
                 margin-left : 0;
                 transform   : translateY(-2rem);
                 opacity     : 0;
                 visibility  : hidden;
-            }
-
-            @media screen and (max-width: 800px) {
-                padding-right : 6vw;
-                padding-left  : 6vw;
             }
         }
 
@@ -197,10 +196,36 @@
                 line-height : 1;
                 padding     : 1.6rem 0;
             }
+
+            &:hover {
+                color: var(--color-gray-2);
+            }
+        }
+
+        &-btn {
+            margin-top: 1.6rem;
+
+            a {
+                padding-left: 3.2rem;
+                padding-right: 3.2rem;
+                background-color: var(--color-1);
+                border-color: var(--color-1);
+                color: var(--color-white);
+
+                &:hover, &:focus {
+                    background-color: var(--color-white);
+                    border-color: var(--color-white);
+                    color: var(--color-1);
+                }
+            }
+
+            @media screen and (min-width: 800px) {
+                display: none;
+            }
         }
 
         .current a {
-            color : white;
+            color : var(--color-white);
         }
 
         @media screen and (max-width: 800px) {

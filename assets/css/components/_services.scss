@@ -9,24 +9,18 @@
 .services .item-service {
 	margin-bottom: 0;
 }
-.service-icon {
-	display: block;
-	width: calc(2.25 * var(--space));
-	height: calc(2.25 * var(--space));
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: contain;
-}
+// .service-icon {
+// 	display: block;
+// 	width: calc(2.25 * var(--space));
+// 	height: calc(2.25 * var(--space));
+// 	background-repeat: no-repeat;
+// 	background-position: center;
+// 	background-size: contain;
+// }
 .service-icon-i {
 	color: var(--color-1);
 	font-size: calc(2.25 * var(--space));
 	display: block;
-}
-.service-icon--branding {
-	background-image: url(https://demo.antonionardini.com/demo/flare/images/icons/services/icon-branding.svg);
-}
-.service-icon--frontend {
-	background-image: url(https://demo.antonionardini.com/demo/flare/images/icons/services/icon-frontend.svg);
 }
 @media screen and (max-width: 1200px) {
 	.services {

@@ -104,11 +104,29 @@
 	margin-left: 0;
 }
 .intro .social a {
-	color: #fff;
-}
+	color: var(--color-white);
 
-.intro .social i {
-	font-size: 3rem;
+	i {
+		font-size: 3rem;
+		transition-duration: 0.3s;
+		transition-timing-function: ease;
+	}
+
+	.bxl-facebook:hover {
+		color: #4267B2;
+	}
+
+	.bxl-twitter:hover {
+		color: #1da1f2;
+	}
+
+	.bxl-instagram:hover {
+		color: #833AB4;
+	}
+
+	.bxl-dribbble:hover {
+		color: #ea4c89;
+	}
 }
 
 .intro .social li {

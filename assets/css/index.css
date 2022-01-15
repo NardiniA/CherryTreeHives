@@ -122,11 +122,31 @@
 }
 
 .intro .social a {
-  color: #fff;
+  color: var(--color-white);
 }
 
-.intro .social i {
+.intro .social a i {
   font-size: 3rem;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+}
+
+.intro .social a .bxl-facebook:hover {
+  color: #4267B2;
+}
+
+.intro .social a .bxl-twitter:hover {
+  color: #1da1f2;
+}
+
+.intro .social a .bxl-instagram:hover {
+  color: #833AB4;
+}
+
+.intro .social a .bxl-dribbble:hover {
+  color: #ea4c89;
 }
 
 .intro .social li {
@@ -575,27 +595,10 @@
   margin-bottom: 0;
 }
 
-.service-icon {
-  display: block;
-  width: calc(2.25 * var(--space));
-  height: calc(2.25 * var(--space));
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-}
-
 .service-icon-i {
   color: var(--color-1);
   font-size: calc(2.25 * var(--space));
   display: block;
-}
-
-.service-icon--branding {
-  background-image: url(https://demo.antonionardini.com/demo/flare/images/icons/services/icon-branding.svg);
-}
-
-.service-icon--frontend {
-  background-image: url(https://demo.antonionardini.com/demo/flare/images/icons/services/icon-frontend.svg);
 }
 
 @media screen and (max-width: 1200px) {
@@ -923,6 +926,7 @@
   margin: 0;
   padding: 0 1.25rem 1.25rem 2.5rem;
   color: #fff;
+  /* var(--color-text) */
 }
 
 @media (min-width: 992px) {
@@ -968,6 +972,7 @@
 .accordion-open .questions__header,
 .accordion-open .questions__content {
   background-color: var(--color-1);
+  /* background-color: transparent; */
 }
 
 .accordion-open .questions__icon i {
