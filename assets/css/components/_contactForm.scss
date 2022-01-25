@@ -9,7 +9,7 @@
         border-bottom: 1px solid var(--color-gray-19);
         margin: 0;
         transition-duration: 0.3s;
-        transition-timing-function: ease;
+        transition-timing-function: ease-out;
 
         @media (min-width: 801px) {
             margin: 0 2rem;
@@ -31,7 +31,7 @@
         font-family: inherit;
         font-size: var(--text-size);
         transition-duration: 0.3s;
-        transition-timing-function: ease;
+        transition-timing-function: ease-out;
 
         &:focus {
             color: var(--color-gray-2);
@@ -62,8 +62,8 @@
         width: 100%;
         font-size: var(--text-sm);
         color: var(--color-gray-19);
-        -webkit-transition: .3s;
-        transition: .3s;
+        -webkit-transition-duration: .3s;
+        transition-duration: .3s;
         font-weight: 600;
     }
 

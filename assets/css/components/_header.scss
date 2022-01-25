@@ -36,6 +36,10 @@
         &.scrolling {
             opacity    : 1;
             visibility : visible;
+
+            .logo img {
+                width: 60px !important;
+            }
         }
 
         .header__inner {
@@ -144,7 +148,7 @@
         }
 
         img {
-            width          : 90px;
+            width          : 70px;
             margin         : 0;
             vertical-align : bottom;
         }
@@ -155,7 +159,7 @@
     * ## main navigation
     * -------------------------------------------------------------------- */
     &__nav {
-        margin-left : 4rem;
+        margin-left : 2rem;
 
         ul {
             list-style : none;
@@ -330,7 +334,12 @@
             font             : 0/0 a;
             text-shadow      : none;
             color            : transparent;
-            transition       : background-color 0.2s ease-in-out;
+            transition-duration: 0.2s;
+            transition-timing-function: ease-out;
+            transition-property: background-color;
+            -webkit-transition-duration: 0.2s;
+            -webkit-transition-timing-function: ease-out;
+            -webkit-transition-property: background-color;
             position         : absolute;
             right            : 23px;
             top              : 50%;
@@ -344,6 +353,8 @@
                 background-color    : inherit;
                 transition-duration : 0.2s, 0.2s;
                 transition-delay    : 0.2s, 0s;
+                -webkit-transition-duration : 0.2s, 0.2s;
+                -webkit-transition-delay    : 0.2s, 0s;
                 position            : absolute;
                 left                : 0;
             }
@@ -351,11 +362,13 @@
             &::before {
                 top                 : -8px;
                 transition-property : top, transform;
+                -webkit-transition-property : top, transform;
             }
 
             &::after {
                 bottom              : -8px;
                 transition-property : bottom, transform;
+                -webkit-transition-property : bottom, transform;
             }
         }
 
@@ -367,6 +380,7 @@
             &::before, &::after {
                 background-color : var(--color-white);
                 transition-delay : 0s, 0.2s;
+                -webkit-transition-delay : 0s, 0.2s;
             }
 
             &::before {
@@ -393,15 +407,27 @@
 
     .menu-iopen .header__nav {
         transform        : scaleY(1);
-        transition       : transform 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+        transition-duration: 0.4s ;
+        transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        transition-property: transform;
         transition-delay : 0s;
+        -webkit-transition-duration: 0.4s ;
+        -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        -webkit-transition-property: transform;
+        -webkit-transition-delay : 0s;
     }
 
     .menu-iopen .header__nav ul {
         transform        : translateY(0);
         opacity          : 1;
         visibility       : visible;
-        transition       : all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
-        transition-delay : 0.4s;
+        transition-duration: 0.4s ;
+        transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        transition-property: transform;
+        transition-delay : 0s;
+        -webkit-transition-duration: 0.4s ;
+        -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        -webkit-transition-property: transform;
+        -webkit-transition-delay : 0s;
     }
 }

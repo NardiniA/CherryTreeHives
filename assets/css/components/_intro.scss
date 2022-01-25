@@ -109,24 +109,28 @@
 	i {
 		font-size: 3rem;
 		transition-duration: 0.3s;
-		transition-timing-function: ease;
+		transition-timing-function: ease-out;
+
+		&:hover {
+			color: var(--color-1);
+		}
 	}
 
-	.bxl-facebook:hover {
-		color: #4267B2;
-	}
+	// .bxl-facebook:hover {
+	// 	color: #4267B2;
+	// }
 
-	.bxl-twitter:hover {
-		color: #1da1f2;
-	}
+	// .bxl-twitter:hover {
+	// 	color: #1da1f2;
+	// }
 
-	.bxl-instagram:hover {
-		color: #833AB4;
-	}
+	// .bxl-instagram:hover {
+	// 	color: #833AB4;
+	// }
 
-	.bxl-dribbble:hover {
-		color: #ea4c89;
-	}
+	// .bxl-dribbble:hover {
+	// 	color: #ea4c89;
+	// }
 }
 
 .intro .social li {
