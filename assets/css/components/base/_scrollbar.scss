@@ -1,0 +1,20 @@
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--color-1);
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+
+    &:hover {
+        background-color: var(--color-2);
+        transition-duration: 0.5s;
+        transition-timing-function: ease;
+    }
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--color-gray-17);
+}
