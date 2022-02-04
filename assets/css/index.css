@@ -921,8 +921,7 @@
 .questions__description {
   margin: 0;
   padding: 0 1.25rem 1.25rem 2.5rem;
-  color: #fff;
-  /* var(--color-text) */
+  color: var(--color-text);
 }
 
 @media (min-width: 992px) {
@@ -969,8 +968,7 @@
 
 .accordion-open .questions__header,
 .accordion-open .questions__content {
-  background-color: var(--color-1);
-  /* background-color: transparent; */
+  background-color: transparent;
 }
 
 .accordion-open .questions__icon i {
