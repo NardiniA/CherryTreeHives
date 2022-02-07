@@ -981,11 +981,6 @@
           transition-timing-function: ease-out;
 }
 
-.questions__item:hover {
-  -webkit-box-shadow: 0 2px 8px rgba(37, 40, 38, 0.15);
-          box-shadow: 0 2px 8px rgba(37, 40, 38, 0.15);
-}
-
 .accordion-open .questions__header,
 .accordion-open .questions__content {
   background-color: transparent;

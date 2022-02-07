@@ -106,10 +106,6 @@
         transition-timing-function: ease-out;
     }
 
-    &__item:hover{
-        box-shadow: 0 2px 8px hsla(152, 4%, 15%, .15);
-    }
-
     /*Rotate icon, change color of titles and background*/
     .accordion-open &__header,
     .accordion-open &__content{
