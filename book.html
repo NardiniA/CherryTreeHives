@@ -66,19 +66,23 @@
 
             <nav class="header__nav">
                 <ul>
-                    <li class="current"><a href="#intro" class="smoothscroll">Intro</a></li>
-                    <li><a href="#about" class="smoothscroll">About</a></li>
-                    <li><a href="#packages" class="smoothscroll">Packages</a></li>
-                    <li><a href="#pricing" class="smoothscroll">Prices</a></li>
-                    <li><a href="#portfolio" class="smoothscroll">Gallery</a></li>
-                    <li><a href="#faqs" class="smoothscroll">FAQS</a></li>
-                    <li><a href="#contact" class="smoothscroll">Contact</a></li>
-                    <li class="header__nav-btn"><a href="book.html" class="smoothscroll">Book Now</a></li>
+                    <li class="current">
+                        <a href="/" class="smoothscroll">Home</a>
+                    </li>
+                    <li>
+                        <a href="/privacy/" class="smoothscroll">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a href="/terms/" class="smoothscroll">Terms of Use</a>
+                    </li>
+                    <li class="header__nav-btn">
+                        <a href="#booking-form" class="smoothscroll">Book Now</a>
+                    </li>
                 </ul>
             </nav>
 
             <div class="header__cta">
-                <a href="book.html" class="header__btn header__btn-stroke header__cta-btn smoothscroll">Book Now</a>
+                <a href="#booking-form" class="header__btn header__btn-stroke header__cta-btn smoothscroll">Book Now</a>
             </div>
 
         </div> <!-- end header__inner -->
@@ -127,7 +131,7 @@
 
     <!-- booking form
     ================================================== -->
-    <section class="booking-form">
+    <section class="booking-form" id="booking-form">
         <script src="//widget.simplybook.it/v2/widget/widget.js"></script>
         <script>var widget = new SimplybookWidget({"widget_type":"iframe","url":"https:\/\/antonionardini.simplybook.it","theme":"hugo","theme_settings":{"timeline_hide_unavailable":"1","hide_past_days":"0","timeline_show_end_time":"0","timeline_modern_display":"as_slots","nav_bg_color":"#ffffff","sb_base_color":"#14171b","display_item_mode":"block","body_bg_color":"#ffffff","sb_review_image":"","dark_font_color":"#6c737d","light_font_color":"#ffffff","sb_company_label_color":"#ffffff","hide_img_mode":"0","show_sidebar":"0","sb_busy":"#dad2ce","sb_available":"#f9be58"},"timeline":"modern","datepicker":"top_calendar","is_rtl":false,"app_config":{"allow_switch_to_ada":0,"predefined":[]}});</script>
     </section>
@@ -182,7 +186,7 @@
         </div>
     </footer>
 
-    <script src="assets/js/header.js"></script>
+    <script src="assets/js/all.js"></script>
     <script src="assets/js/preloader.js"></script>    
 
 </body>

@@ -45,3 +45,30 @@ const toggleItem = (item) =>{
 	}
 
 }
+
+/* HEADER ACTIVE SECTIONS
+ * ------------------------------------------------------ */
+const sections = document.querySelectorAll("section[id]");
+
+function scrollActive() {
+	console.log("Scroll Active");
+	const scrollY = window.pageYOffset;
+
+	sections.forEach((current) => {
+		const sectionHeight = current.offsetHeight;
+		const sectionTop = current.offsetTop - 50;
+		sectionId = current.getAttribute("id");
+
+		if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+			document
+				.querySelector(".header__nav a[href*=" + sectionId + "]")
+				.parentElement.classList.add("current");
+		} else {
+			document
+				.querySelector(".header__nav a[href*=" + sectionId + "]")
+				.parentElement.classList.remove("current");
+		}
+	});
+}
+
+window.addEventListener("scroll", scrollActive);
