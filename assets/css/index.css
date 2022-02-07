@@ -430,6 +430,18 @@
   }
 }
 
+@media screen and (max-width: 350px) {
+  .text-huge-title {
+    --text-multiplier: 0.42;
+  }
+}
+
+@media screen and (max-width: 325px) {
+  .text-huge-title {
+    --text-multiplier: 0.37;
+  }
+}
+
 .about {
   background-color: var(--color-bg);
   padding-top: calc(7 * var(--space));
