@@ -46,6 +46,12 @@
 .about__process .item-process {
 	position: relative;
 }
+
+.about__intro-text {
+	padding-top: var(--vspace-0_5);
+	padding-bottom: var(--vspace-4);
+}
+
 @media screen and (max-width: 1400px) {
 	.about::before {
 		right: 15vw;
@@ -60,6 +66,10 @@
 @media screen and (max-width: 900px) {
 	.about__photo-block {
 		display: none;
+	}
+
+	.about__intro-text {
+		padding-bottom: 0;
 	}
 }
 @media screen and (max-width: 800px) {
