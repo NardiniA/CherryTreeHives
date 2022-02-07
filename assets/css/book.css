@@ -1,6 +1,12 @@
 .banner {
-  padding-top: 130px;
+  padding-top: 170px;
   padding-bottom: 80px;
+}
+
+@media screen and (max-width: 800px) {
+  .banner {
+    padding-top: 130px;
+  }
 }
 
 .banner > .row {
@@ -11,6 +17,68 @@
   display: block;
   text-align: center;
   margin: 0 auto;
+}
+
+.info {
+  background-color: var(--color-bg);
+  padding-top: calc(5 * var(--space));
+  padding-bottom: calc(4 * var(--space));
+  position: relative;
+}
+
+.info__photo-block {
+  position: relative;
+}
+
+.info__photo {
+  background-image: url(https://nardinia.github.io/CherryTreeHives/assets/img/beekeeper-suit.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: var(--vspace-0_5);
+  right: var(--gutter-lg);
+  left: var(--gutter-lg);
+  bottom: var(--vspace-1);
+}
+
+.info__intro-text {
+  padding-top: var(--vspace-0_5);
+  padding-bottom: var(--vspace-4);
+}
+
+@media screen and (max-width: 1400px) {
+  .info::before {
+    right: 15vw;
+    left: auto;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .info {
+    padding-top: calc(5 * var(--space));
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .info__photo-block {
+    display: none;
+  }
+  .info__intro-text {
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .info::before {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .info {
+    padding-top: var(--vspace-4);
+  }
 }
 
 .booking__form {

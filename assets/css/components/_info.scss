@@ -1,0 +1,54 @@
+.info {
+	background-color: var(--color-bg);
+	padding-top: calc(5 * var(--space));
+	padding-bottom: calc(4 * var(--space));
+	position: relative;
+
+	&__photo-block {
+		position: relative;
+	}
+
+	&__photo {
+		background-image: url(https://nardinia.github.io/CherryTreeHives/assets/img/beekeeper-suit.jpg);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		position: absolute;
+		top: var(--vspace-0_5);
+		right: var(--gutter-lg);
+		left: var(--gutter-lg);
+		bottom: var(--vspace-1);
+	}
+
+	&__intro-text {
+		padding-top: var(--vspace-0_5);
+		padding-bottom: var(--vspace-4);
+	}
+
+	@media screen and (max-width: 1400px) {
+		&::before {
+			right: 15vw;
+			left: auto;
+		}
+	}
+	@media screen and (max-width: 1000px) {
+		padding-top: calc(5 * var(--space));
+	}
+	@media screen and (max-width: 900px) {
+		&__photo-block {
+			display: none;
+		}
+
+		&__intro-text {
+			padding-bottom: 0;
+		}
+	}
+	@media screen and (max-width: 800px) {
+		&::before {
+			display: none;
+		}
+	}
+	@media screen and (max-width: 400px) {
+		padding-top: var(--vspace-4);
+	}
+}

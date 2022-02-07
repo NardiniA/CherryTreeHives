@@ -14,7 +14,7 @@
     top              : 3.2rem;
     left             : 0;
 
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 850px) {
         --logo-width : 80px;
         top          : 1.6rem;
     }
@@ -102,7 +102,7 @@
             max-width: 1360px;
         }
 
-        @media screen and (max-width: 800px) {
+        @media screen and (max-width: 850px) {
             max-width : none;
             width     : 100%;
             margin    : 0;
@@ -113,7 +113,7 @@
     &__block {
         z-index : 101;
 
-        @media screen and (max-width: 800px) {
+        @media screen and (max-width: 850px) {
             width            : 100%;
             height           : 74px;
             background-color : transparent;
@@ -132,7 +132,7 @@
             transform : translate(6.1vw, -50%);
         }
 
-        @media screen and (max-width: 800px) {
+        @media screen and (max-width: 850px) {
             position  : absolute;
             left      : 0;
             top       : 50%;
@@ -168,7 +168,7 @@
             margin     : 0;
             padding    : 0;
 
-            @media screen and (max-width: 800px) {
+            @media screen and (max-width: 850px) {
                 flex-direction: column;
             }
 
@@ -194,7 +194,7 @@
             padding             : 0 1.2rem;
             transition-property : color, background-color;
 
-            @media screen and (max-width: 800px) {
+            @media screen and (max-width: 850px) {
                 display     : inline-block;
                 font-size   : calc(1.8rem * 0.9444);
                 line-height : 1;
@@ -223,7 +223,7 @@
                 }
             }
 
-            @media screen and (min-width: 800px) {
+            @media screen and (min-width: 850px) {
                 display: none;
             }
         }
@@ -232,7 +232,7 @@
             color : var(--color-white);
         }
 
-        @media screen and (max-width: 800px) {
+        @media screen and (max-width: 850px) {
             transform        : scaleY(0);
             transform-origin : center top;
             display          : block;
@@ -260,7 +260,7 @@
             margin-right : 0;
         }
 
-        @media screen and (max-width: 800px) {
+        @media screen and (max-width: 850px) {
             display : none;
         }
 
@@ -317,7 +317,7 @@
         transform: translateY(-50%);
         right    : 1.6rem;
 
-        @media screen and (max-width: 800px) {
+        @media screen and (max-width: 850px) {
             display : block;
         }
 
@@ -400,7 +400,7 @@
 * responsive:
 * site-header
 * ------------------------------------------------------------------- */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
     .menu-iopen .header {
         height : auto;
     }

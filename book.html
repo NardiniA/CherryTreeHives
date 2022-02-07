@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html lang="en">
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -21,12 +21,112 @@
 </head>
 <body id="top">
 
+    <!-- # preloader
+    ================================================== -->
+    <section class="preloader">
+        <div class="preloader-container">
+            <div>
+                <div>
+                    <span class="one hive6"></span>
+                    <span class="two hive3"></span>
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <span class="one hive1"></span>
+                    <span class="two hive4"></span>
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <span class="one hive5"></span>
+                    <span class="two hive2"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- # site header 
+    ================================================== -->
+    <header class="header">
+
+        <div class="row header__inner">
+
+            <div class="header__block">
+                <div class="header__logo">
+                    <a class="logo" href="#">
+                        <img src="assets/img/logo.png" alt="Homepage"> <!-- https://www.styleshout.com/templates/preview/Booth_1_0_0/images/logo.svg -->
+                    </a>
+                </div>
+
+                <a class="header__menu-toggle" href="#0"><span>Menu</span></a>
+            </div> <!-- end header__block -->
+
+            <nav class="header__nav">
+                <ul>
+                    <li class="current"><a href="#intro" class="smoothscroll">Intro</a></li>
+                    <li><a href="#about" class="smoothscroll">About</a></li>
+                    <li><a href="#packages" class="smoothscroll">Packages</a></li>
+                    <li><a href="#pricing" class="smoothscroll">Prices</a></li>
+                    <li><a href="#portfolio" class="smoothscroll">Gallery</a></li>
+                    <li><a href="#faqs" class="smoothscroll">FAQS</a></li>
+                    <li><a href="#contact" class="smoothscroll">Contact</a></li>
+                    <li class="header__nav-btn"><a href="book.html" class="smoothscroll">Book Now</a></li>
+                </ul>
+            </nav>
+
+            <div class="header__cta">
+                <a href="book.html" class="header__btn header__btn-stroke header__cta-btn smoothscroll">Book Now</a>
+            </div>
+
+        </div> <!-- end header__inner -->
+
+    </header> <!-- end header -->
+
+    <!-- banner
+    ================================================== -->
     <section class="banner">
         <div class="row">
             <h1 class="banner__title">Book an appointment</h1>
         </div>
     </section>
 
+    <!-- info
+    ================================================== -->
+    <section id="info" class="info">
+
+        <div class="row">
+            <div class="column large-12">
+
+                <div class="section-title" data-aos="fade-up">
+                    <h3 class="h6" contenteditable="true">Booking Form</h3>
+                </div>
+
+            </div>
+
+            <div class="column large-6 w-900-stack info__intro-text">
+                <h1 class="display-1" data-aos="fade-up" contenteditable="true">
+                    Cherry Tree Hives
+                </h1>
+
+                <p class="lead" data-aos="fade-up" contenteditable="true">
+                    We are an exciting NEW business eager to teach the world info one of the world's oldest hobbies - 
+                    Beekeeping! Located in the beautiful Welsh countryside of Powys, we offer an amazing opportunity to receive 
+                    a "hands on" educational experience, located near the famous book-tom, Hay-On-Wye.
+                </p>
+            </div>
+
+            <div class="column large-6 w-900-stack info__photo-block">
+                <div class="info__photo" data-aos="fade-up"></div>
+            </div>
+        </div>
+
+    </section> <!-- end info -->
+
+    <!-- booking form
+    ================================================== -->
     <section class="booking-form">
         <script src="//widget.simplybook.it/v2/widget/widget.js"></script>
         <script>var widget = new SimplybookWidget({"widget_type":"iframe","url":"https:\/\/antonionardini.simplybook.it","theme":"hugo","theme_settings":{"timeline_hide_unavailable":"1","hide_past_days":"0","timeline_show_end_time":"0","timeline_modern_display":"as_slots","nav_bg_color":"#ffffff","sb_base_color":"#14171b","display_item_mode":"block","body_bg_color":"#ffffff","sb_review_image":"","dark_font_color":"#6c737d","light_font_color":"#ffffff","sb_company_label_color":"#ffffff","hide_img_mode":"0","show_sidebar":"0","sb_busy":"#dad2ce","sb_available":"#f9be58"},"timeline":"modern","datepicker":"top_calendar","is_rtl":false,"app_config":{"allow_switch_to_ada":0,"predefined":[]}});</script>
@@ -82,10 +182,8 @@
         </div>
     </footer>
 
-    <script src="assets/js/plugins.js"></script>
-    <script src="assets/js/glightbox.min.js"></script>
-    <script src="assets/js/main.js"></script>
-    
+    <script src="assets/js/header.js"></script>
+    <script src="assets/js/preloader.js"></script>    
 
 </body>
 </html>
