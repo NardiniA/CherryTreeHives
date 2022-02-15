@@ -97,14 +97,14 @@ window.addEventListener('DOMContentLoaded', () => {
 					service_id: "service_4gn38jh",
 					template_id: "template_feqr0nx",
 					user_id: "user_pwnrSymGTUtZ4MVyEqwmT",
-					template_params: JSON.stringify({
+					template_params: {
                         name: formData[0].value,
                         subject: formData[1].value,
                         email: formData[2].value,
                         phone: formData[3].value,
                         message: formData[4].value,
                         to: "techteacher.pershore@gmail.com"
-                    }),
+                    },
 				}),
 			})
 				.then((res) => res.text())
