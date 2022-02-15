@@ -51,7 +51,6 @@ const toggleItem = (item) =>{
 const sections = document.querySelectorAll("section[id]");
 
 function scrollActive() {
-	console.log("Scroll Active");
 	const scrollY = window.pageYOffset;
 
 	sections.forEach((current) => {
