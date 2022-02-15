@@ -1071,6 +1071,46 @@
   }
 }
 
+.form__group:focus-within {
+  border-color: var(--color-white) !important;
+  color: var(--color-white) !important;
+}
+
+.form__group.error {
+  border-color: #da1e37;
+}
+
+.form__group.error .form__input {
+  padding-right: 125px;
+}
+
+.form__group.error .form__label {
+  color: #da1e37;
+}
+
+.form__group.error .form__message {
+  color: #da1e37;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form__group.error .form__message span {
+  font-size: var(--text-xs);
+  line-height: 2;
+}
+
+.form__group.error .form__message i {
+  margin-left: 0.5rem;
+}
+
+.form__message {
+  display: none;
+}
+
 .form__input {
   position: absolute;
   top: 0;
@@ -1103,10 +1143,6 @@
   color: var(--color-white);
 }
 
-.form__group:focus-within {
-  border-color: var(--color-white);
-}
-
 .form .form__input:not(:placeholder-shown).form__input:not(:focus) + .form__label {
   top: -1.6rem;
   font-size: var(--text-xs);
@@ -1122,6 +1158,21 @@
   -webkit-transition-duration: .3s;
   transition-duration: .3s;
   font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-right: 1rem;
+}
+
+.form__label i {
+  font-size: var(--text-md);
+  line-height: 1;
 }
 
 .form__area {
