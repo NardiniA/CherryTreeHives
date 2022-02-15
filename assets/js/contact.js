@@ -101,18 +101,20 @@ window.addEventListener('DOMContentLoaded', () => {
                         name: formData[0].value,
                         subject: formData[1].value,
                         email: formData[2].value,
-                        phone: "N/A",
-                        message: `${formData[4].value}\n\nItem: ${formData[3].value}.`,
+                        phone: formData[3].value,
+                        message: formData[4].value,
                         to: "techteacher.pershore@gmail.com"
                     }),
 				}),
 			})
 				.then((res) => res.text())
 				.then((data) => {
+                    console.log(data);
 					// Show Success
 					showNotification("success", "Email Sent!");
 				})
 				.catch((err) => {
+                    console.error(err);
 					// Show Notification Error
 					showNotification("error", "Unable to send email");
 				});
