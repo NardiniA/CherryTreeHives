@@ -87,64 +87,28 @@ window.addEventListener('DOMContentLoaded', () => {
 			}
 
 			// All inputs are valid; continue
-
 			// Show Progress Spinner
 			document.querySelector(".form__button .btn").innerHTML =
 				"<div></div>";
 
 			// Send the Email
 			emailjs.send("service_4gn38jh", "template_feqr0nx", {
-						name: formData[0].value,
-						subject: formData[1].value,
-						email: formData[2].value,
-						phone: formData[3].value,
-						message: formData[4].value,
-						to: "techteacher.pershore@gmail.com",
-					})
-                    .then(function(response) {
-						console.log(response);
-						// Show Success
-						showNotification("success", "Email Sent!");
-					}, function(error) {
-                        console.error(err);
-						// Show Notification Error
-						showNotification("error", "Unable to send email");
-                    });
-			// fetch("https://api.emailjs.com/api/v1.0/email/send", {
-			// 	method: "POST",
-			// 	headers: {
-			// 		"Content-Type": "application/json",
-			// 	},
-			// 	body: JSON.stringify({
-			// 		service_id: "service_4gn38jh",
-			// 		template_id: "template_feqr0nx",
-			// 		user_id: "user_pwnrSymGTUtZ4MVyEqwmT",
-			// 		template_params: {
-			// 			name: formData[0].value,
-			// 			subject: formData[1].value,
-			// 			email: formData[2].value,
-			// 			phone: formData[3].value,
-			// 			message: formData[4].value,
-			// 			to: "techteacher.pershore@gmail.com",
-			// 		},
-			// 	}),
-			// })
-			// 	.then((res) => res.text())
-			// 	.then((data) => {
-			// 		console.log(data);
-			// 		if (data === "OK") {
-			// 			// Show Success
-			// 			showNotification("success", "Email Sent!");
-			// 		} else {
-			// 			// Show Notification Error
-			// 			showNotification("error", "Unable to send email");
-			// 		}
-			// 	})
-			// 	.catch((err) => {
-			// 		console.error(err);
-			// 		// Show Notification Error
-			// 		showNotification("error", "Unable to send email");
-			// 	});
+                name: formData[0].value,
+                subject: formData[1].value,
+                email: formData[2].value,
+                phone: formData[3].value,
+                message: formData[4].value,
+                to: "techteacher.pershore@gmail.com",
+            })
+            .then(function(response) {
+                console.log(response);
+                // Show Success
+                showNotification("success", "Email Sent!");
+            }, function(error) {
+                console.error(err);
+                // Show Notification Error
+                showNotification("error", "Unable to send email");
+            });
 
 			// Reset Form
 			document.querySelector(".form__button .btn").innerHTML =
