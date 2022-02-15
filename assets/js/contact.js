@@ -110,8 +110,13 @@ window.addEventListener('DOMContentLoaded', () => {
 				.then((res) => res.text())
 				.then((data) => {
                     console.log(data);
-					// Show Success
-					showNotification("success", "Email Sent!");
+                    if (data === "OK") {
+                        // Show Success
+					    showNotification("success", "Email Sent!");
+                    } else {
+						// Show Notification Error
+						showNotification("error", "Unable to send email");
+					}
 				})
 				.catch((err) => {
                     console.error(err);
