@@ -1,0 +1,38 @@
+.info__banner {
+    padding: 4rem 5rem 4rem 4rem;
+    border-left: 3px solid var(--color-info);
+    background-color: hsla(205, 82%, 91%, 0.25);
+    color: var(--text-color);
+    font-size: var(--text-size);
+    display: inline-block;
+    max-width: 650px;
+
+    &-title {
+        margin: 0;
+        color: var(--color-gray-1);
+        font-size: var(--text-lg);
+        margin-bottom: var(--vspace-0_25);
+    }
+
+    &-desc {
+        margin: 0;
+        color: var(--color-gray-5);
+        line-height: 1.5;
+        font-size: var(--text-size);
+    }
+
+    &.banner__warning {
+        border-left-color: var(--color-notice);
+        background-color: hsla(51, 100%, 80%, 0.25);
+    }
+
+    &.banner__error {
+        border-left-color: var(--color-error);
+        background-color: hsla(359, 100%, 91%, 0.25);
+    }
+
+    &.banner__success {
+        border-left-color: var(--color-success);
+        background-color: hsla(76, 69%, 68%, 0.25);
+    }
+}

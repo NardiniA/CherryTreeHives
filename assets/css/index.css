@@ -220,6 +220,9 @@
 }
 
 .no-js .intro__content,
+.intro__show .intro__content,
+.intro__show .intro__scroll,
+.intro__show .intro__logo,
 .no-js .intro__logo,
 .no-js .intro__scroll {
   opacity: 1;
