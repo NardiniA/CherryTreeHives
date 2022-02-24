@@ -92,4 +92,68 @@
   border-left-color: var(--color-success);
   background-color: rgba(200, 230, 117, 0.25);
 }
+
+.review__card {
+  position: relative;
+  overflow: hidden;
+  padding: 40px 28px;
+  margin-bottom: 40px;
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-white);
+}
+
+@media (min-width: 540px) {
+  .review__card {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+.review__card-info {
+  color: var(--color-text);
+  font-size: var(--text-size);
+  line-height: 1.6;
+  font-weight: 600;
+  margin: 0 0 32px;
+}
+
+.review__card-meta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.review__card-meta-author {
+  margin: 0 12px 0 0;
+  height: 60px;
+  max-width: 60px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 9999px;
+}
+
+.review__card-meta-title {
+  color: var(--color-white);
+  font-weight: 600;
+  margin: 0 0 4px;
+  font-size: var(--text-size);
+  line-height: 1.5;
+}
+
+.review__card-meta-subtitle {
+  color: var(--color-text);
+  font-size: var(--text-sm);
+  line-height: 1.5;
+  margin: 0;
+  font-weight: 600;
+}
+
+.review__card-icon {
+  position: absolute;
+  bottom: 32px;
+  right: 32px;
+}
 /*# sourceMappingURL=styles.css.map */

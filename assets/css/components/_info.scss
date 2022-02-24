@@ -36,7 +36,9 @@
 	}
 	@media screen and (max-width: 900px) {
 		&__photo-block {
-			display: none;
+			// display: none;
+			width: 100%;
+			min-height: 350px;
 		}
 
 		&__intro-text {

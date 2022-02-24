@@ -420,6 +420,19 @@ p,
 ul {
 	margin-bottom: var(--vspace-1);
 }
+
+.section {
+    background-color: var(--color-bg);
+    padding-top: calc(5 * var(--space));
+    padding-bottom: var(--vspace-3);
+}
+
+.sub-section {
+	background-color: var(--color-bg);
+    padding-top: calc(3 * var(--space));
+    padding-bottom: var(--vspace-1);
+}
+
 @-webkit-keyframes dotjump {
 	0% {
 		top: 0;

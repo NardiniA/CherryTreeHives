@@ -62,7 +62,8 @@
 
 @media screen and (max-width: 900px) {
   .info__photo-block {
-    display: none;
+    width: 100%;
+    min-height: 350px;
   }
   .info__intro-text {
     padding-bottom: 0;
@@ -82,18 +83,7 @@
 }
 
 .booking__form {
-  padding-top: calc(2 * var(--space));
   background-color: var(--color-bg);
-}
-
-.booking__form-top {
-  margin-bottom: var(--vspace-1);
-}
-
-@media screen and (max-width: 360px) {
-  .booking__form-row {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-  }
+  height: 100%;
 }
 /*# sourceMappingURL=book.css.map */

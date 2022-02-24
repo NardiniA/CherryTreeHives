@@ -1,15 +1,4 @@
 .booking__form {
-    padding-top: calc(2 * var(--space));
     background-color: var(--color-bg);
-
-    &-top {
-        margin-bottom: var(--vspace-1);
-    }
-
-    &-row {
-        @media screen and (max-width: 360px) {
-            padding-left: 0 !important;
-            padding-right: 0 !important;
-        }
-    }
+    height: 100%;
 }
