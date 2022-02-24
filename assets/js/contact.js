@@ -105,7 +105,7 @@ window.addEventListener('DOMContentLoaded', () => {
                 // Show Success
                 showNotification("success", "Email Sent!");
             }, function(error) {
-                console.error(err);
+                console.error(error);
                 // Show Notification Error
                 showNotification("error", "Unable to send email");
             });
