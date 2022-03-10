@@ -405,6 +405,7 @@ h5 {
 
 .h6,
 h6 {
+  font-family: var(--font-3);
   font-size: var(--text-sm);
   font-weight: 600;
   line-height: var(--vspace-0_75);
