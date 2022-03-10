@@ -423,25 +423,25 @@
 
 @media screen and (max-width: 600px) {
   .text-huge-title {
-    --text-multiplier: 0.5;
+    --text-multiplier: 0.45;
   }
 }
 
 @media screen and (max-width: 400px) {
   .text-huge-title {
-    --text-multiplier: 0.464;
+    --text-multiplier: 0.38;
   }
 }
 
 @media screen and (max-width: 350px) {
   .text-huge-title {
-    --text-multiplier: 0.42;
+    --text-multiplier: 0.37;
   }
 }
 
 @media screen and (max-width: 325px) {
   .text-huge-title {
-    --text-multiplier: 0.37;
+    --text-multiplier: 0.29;
   }
 }
 
