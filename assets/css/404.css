@@ -1,0 +1,54 @@
+.banner {
+  padding-top: 170px;
+  padding-bottom: 80px;
+}
+
+@media screen and (max-width: 800px) {
+  .banner {
+    padding-top: 130px;
+  }
+}
+
+.banner > .row {
+  text-align: center;
+}
+
+.banner__title {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.error-page-inner {
+  text-align: center;
+  padding: 6rem 2rem;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07), 0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07), 0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+}
+
+.error-page h1 {
+  font-size: 36px;
+  margin-top: 0;
+}
+
+.error-page p {
+  font-size: 20px;
+}
+
+.error-page-actions {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 600px;
+}
+
+.error-page-actions .btn {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+/*# sourceMappingURL=404.css.map */
