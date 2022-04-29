@@ -2,13 +2,13 @@
 
 @font-face {
     font-family: Captureit;
-    src: url("\\assets\\fonts\\Capture_it.ttf");
+    src: url("https://cdn.antonionardini.com/cherrytreehives/fonts/Capture_it.ttf");
 }
 
 :root {
 	--font-1: "Nunito Sans", sans-serif;
 	--font-2: "Montserrat", sans-serif;
-	--font-3: Captureit, serif;
+	--font-3: Captureit, "Montserrat", serif;
 	// --font-1: "Nunito Sans", sans-serif;
 	// --font-2: "Montserrat", sans-serif;
 	--font-mono: Consolas, "Andale Mono", Courier, "Courier New", monospace;
