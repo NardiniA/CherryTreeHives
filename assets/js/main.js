@@ -15,11 +15,62 @@ const lightbox = GLightbox({
 	selector: ".folio-item__thumb-link",
 });
 
+const moreGalleryBtn = document.getElementById('galleryViewMoreBtn');
+const moreGallery = GLightbox({
+	elements: [
+		{
+			href: "/assets/img/gallery/optimised/work7.webp",
+			type: "image",
+		},
+		{
+			href: "/assets/img/gallery/optimised/work8.webp",
+			type: "image",
+		},
+		{
+			href: "/assets/img/gallery/optimised/work9.webp",
+			type: "image",
+		},
+		{
+			href: "/assets/img/gallery/optimised/work10.webp",
+			type: "image",
+		},
+		{
+			href: "/assets/img/gallery/optimised/work11.webp",
+			type: "image",
+		},
+		{
+			href: "/assets/img/gallery/optimised/work12.webp",
+			type: "image",
+		},
+		{
+			href: "/assets/img/gallery/optimised/work13.webp",
+			type: "image",
+		},
+		{
+			href: "/assets/img/gallery/optimised/work14.webp",
+			type: "image",
+		},
+		{
+			href: "/assets/img/gallery/optimised/work15.webp",
+			type: "image",
+		},
+		{
+			href: "/assets/img/gallery/optimised/work16.webp",
+			type: "image",
+		},
+	],
+});
+
+moreGalleryBtn.addEventListener('click', function() {
+	moreGallery.open();
+});
+
+
 /* FAQ
  * ------------------------------------------------------ */
 const accordionItems = document.querySelectorAll('.questions__item')
 
-accordionItems.forEach((item) =>{
+accordionItems.forEach(function(item) {
 	const accordionHeader = item.querySelector('.questions__header')
 
 	accordionHeader.addEventListener('click', () =>{
@@ -33,7 +84,7 @@ accordionItems.forEach((item) =>{
 	})
 })
 
-const toggleItem = (item) =>{
+const toggleItem = function(item) {
 	const accordionContent = item.querySelector('.questions__content')
 
 	if(item.classList.contains('accordion-open')){

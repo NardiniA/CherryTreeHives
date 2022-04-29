@@ -157,13 +157,6 @@
     <section id="info" class="info" style="padding-top: calc(3 * var(--space));">
 
         <div class="row">
-            <div class="column large-12">
-
-                <div class="section-title" data-aos="fade-up">
-                    <h3 class="h6" contenteditable="true">Booking Form</h3>
-                </div>
-
-            </div>
 
             <div class="column large-6 w-900-stack info__intro-text">
                 <h1 class="display-1" data-aos="fade-up" contenteditable="true">
@@ -232,7 +225,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 
     <script src="assets/js/all.js"></script>
-    <script src="assets/js/preloader.js"></script>    
+    <script src="assets/js/preloader.js"></script>
+    
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            let termsAndConditionsBtn = document.querySelector('#sb_user_terms_link');
+            termsAndConditionsBtn.setAttribute("href", "/")
+        });
+    </script>
 
 </body>
 </html>

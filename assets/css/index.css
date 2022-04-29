@@ -553,7 +553,7 @@
 }
 
 .item-title {
-  font-family: var(--font-2);
+  font-family: var(--font-3);
   font-weight: 500;
   font-size: var(--text-lg);
   line-height: var(--vspace-1_25);
@@ -902,6 +902,7 @@
 }
 
 .questions__item-title {
+  font-family: var(--font-2);
   font-size: var(--text-sm);
   font-weight: 500;
   margin: 0;
@@ -1425,6 +1426,7 @@
 }
 
 .pricing__card-header h4 {
+  font-family: var(--font-2);
   font-weight: 600;
   font-size: 26px;
   line-height: 1.2;
