@@ -5,7 +5,6 @@ window.addEventListener('DOMContentLoaded', () => {
 		name: false,
 		subject: false,
 		email: false,
-		item: false,
 		msg: false,
 	};
 
@@ -76,6 +75,8 @@ window.addEventListener('DOMContentLoaded', () => {
 				}
 			});
 
+			console.log(data);
+
 			// Check all inputs are valid
 			const formData = data;
 			if (
@@ -96,9 +97,8 @@ window.addEventListener('DOMContentLoaded', () => {
                 name: formData[0].value,
                 subject: formData[1].value,
                 email: formData[2].value,
-                phone: formData[3].value,
-                message: formData[4].value,
-                to: "cherrytreehives@gmail.com",
+                message: formData[3].value,
+                to: "techteacher.pershore@gmail.com",
             })
             .then(function(response) {
                 console.log(response);
