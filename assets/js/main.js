@@ -19,43 +19,43 @@ const moreGalleryBtn = document.getElementById('galleryViewMoreBtn');
 const moreGallery = GLightbox({
 	elements: [
 		{
-			href: "/assets/img/gallery/optimised/work7.webp",
+			href: "https://cdn.antonionardini.com/cherrytreehives/img/gallery/optimised/work7.webp",
 			type: "image",
 		},
 		{
-			href: "/assets/img/gallery/optimised/work8.webp",
+			href: "https://cdn.antonionardini.com/cherrytreehives/img/gallery/optimised/work8.webp",
 			type: "image",
 		},
 		{
-			href: "/assets/img/gallery/optimised/work9.webp",
+			href: "https://cdn.antonionardini.com/cherrytreehives/img/gallery/optimised/work9.webp",
 			type: "image",
 		},
 		{
-			href: "/assets/img/gallery/optimised/work10.webp",
+			href: "https://cdn.antonionardini.com/cherrytreehives/img/gallery/optimised/work10.webp",
 			type: "image",
 		},
 		{
-			href: "/assets/img/gallery/optimised/work11.webp",
+			href: "https://cdn.antonionardini.com/cherrytreehives/img/gallery/optimised/work11.webp",
 			type: "image",
 		},
 		{
-			href: "/assets/img/gallery/optimised/work12.webp",
+			href: "https://cdn.antonionardini.com/cherrytreehives/img/gallery/optimised/work12.webp",
 			type: "image",
 		},
 		{
-			href: "/assets/img/gallery/optimised/work13.webp",
+			href: "https://cdn.antonionardini.com/cherrytreehives/img/gallery/optimised/work13.webp",
 			type: "image",
 		},
 		{
-			href: "/assets/img/gallery/optimised/work14.webp",
+			href: "https://cdn.antonionardini.com/cherrytreehives/img/gallery/optimised/work14.webp",
 			type: "image",
 		},
 		{
-			href: "/assets/img/gallery/optimised/work15.webp",
+			href: "https://cdn.antonionardini.com/cherrytreehives/img/gallery/optimised/work15.webp",
 			type: "image",
 		},
 		{
-			href: "/assets/img/gallery/optimised/work16.webp",
+			href: "https://cdn.antonionardini.com/cherrytreehives/img/gallery/optimised/work16.webp",
 			type: "image",
 		},
 	],

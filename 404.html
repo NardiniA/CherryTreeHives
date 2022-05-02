@@ -17,18 +17,19 @@
     <meta property="og:url" content="https://cherrytreehives.com/404" />
     <meta property="og:title" content="Cherry Tree Hives - Page Not Found" />
     <meta property="og:description" content="Page does not exist. Check your link." />
-    <meta property="og:image" content="https://cherrytreehives.com/assets/img/logo-black.png" />
+    <meta property="og:image" content="https://cdn.antonionardini.com/cherrytreehives/img/logo-black.png" />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content="https://cherrytreehives.com/404" />
     <meta property="twitter:title" content="Cherry Tree Hives - Page Not Found" />
     <meta property="twitter:description" content="Page does not exist. Check your link." />
-    <meta property="twitter:image" content="https://cherrytreehives.com/assets/img/logo-black.png" />
+    <meta property="twitter:image" content="https://cdn.antonionardini.com/cherrytreehives/img/logo-black.png" />
 
     <!--===== CSS =====-->
-    <link rel='stylesheet' href='assets/css/base.css' />
-    <link rel="stylesheet" href="assets/css/404.css" />
+    <link rel='stylesheet' href='https://cdn.antonionardini.com/cherrytreehives/css/base.css' />
+    <link rel="stylesheet" href="https://cdn.antonionardini.com/cherrytreehives/css/404.css" />
+    <link rel="stylesheet" href="/assets/css/font.min.css" />
 
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" />
 </head>
@@ -70,7 +71,7 @@
             <div class="header__block">
                 <div class="header__logo">
                     <a class="logo" href="#">
-                        <img src="assets/img/logo.png" alt="Homepage"> <!-- https://www.styleshout.com/templates/preview/Booth_1_0_0/images/logo.svg -->
+                        <img src="https://cdn.antonionardini.com/cherrytreehives/img/logo.png" alt="Homepage"> <!-- https://www.styleshout.com/templates/preview/Booth_1_0_0/images/logo.svg -->
                     </a>
                 </div>
 
@@ -89,13 +90,13 @@
                         <a href="/terms/" class="smoothscroll">Terms of Use</a>
                     </li>
                     <li class="header__nav-btn">
-                        <a href="#booking-form" class="smoothscroll">Book Now</a>
+                        <a href="/book/" class="smoothscroll">Book Now</a>
                     </li>
                 </ul>
             </nav>
 
             <div class="header__cta">
-                <a href="#booking-form" class="header__btn header__btn-stroke header__cta-btn smoothscroll">Book Now</a>
+                <a href="/book/" class="header__btn header__btn-stroke header__cta-btn smoothscroll">Book Now</a>
             </div>
 
         </div> <!-- end header__inner -->
@@ -168,6 +169,11 @@
                     <span>Design by <a href="https://www.styleshout.com/">StyleShout</a></span>
                     <span>Improved By <a href="https://antonionardini.com">Antonio Nardini</a></span> 
                 </div>
+
+                <div class="copyright">
+                    <span><a href="/terms-of-use/">Terms of use</a></span>
+                    <span><a href="/privacy/">Privacy Policy</a></span> 
+                </div>
             </div>
 
         </div>
@@ -176,8 +182,18 @@
     <!--==================== MODERNIZR JS =====================-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 
-    <script src="assets/js/all.js"></script>
-    <script src="assets/js/preloader.js"></script>    
+    <script src="https://cdn.antonionardini.com/cherrytreehives/js/all.min.js"></script>
+    <script src="https://cdn.antonionardini.com/cherrytreehives/js/preloader.min.js"></script>    
+
+    <noscript class="notification bottom-left show">
+        <div class="notification__inner">
+            <span>
+                <i class="bx bx-error"></i>
+                Please enable Javascript to use this website.
+            </span>
+            <i class="bx bx-x notification__close" onClick="hideNotification();"></i>
+        </div>
+    </noscript>
 
 </body>
 </html>

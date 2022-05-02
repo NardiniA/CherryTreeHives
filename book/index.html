@@ -18,18 +18,19 @@
     <meta property="og:url" content="https://cherrytreehives.com/book/" />
     <meta property="og:title" content="Cherry Tree Hives - Booking Page" />
     <meta property="og:description" content="Book a fun, interactive beekeeping experience now. Located in Wales, near Hay-on-wye. Learn how hives work and how beekeepers manage the season." />
-    <meta property="og:image" content="https://cherrytreehives.com/assets/img/logo-black.png" />
+    <meta property="og:image" content="https://cdn.antonionardini.com/cherrytreehives/img/logo-black.png" />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content="https://cherrytreehives.com/book/" />
     <meta property="twitter:title" content="Cherry Tree Hives - Booking Page" />
     <meta property="twitter:description" content="Book a fun, interactive beekeeping experience now. Located in Wales, near Hay-on-wye. Learn how hives work and how beekeepers manage the season." />
-    <meta property="twitter:image" content="https://cherrytreehives.com/assets/img/logo-black.png" />
+    <meta property="twitter:image" content="https://cdn.antonionardini.com/cherrytreehives/img/logo-black.png" />
 
     <!--===== CSS =====-->
-    <link rel='stylesheet' href='assets/css/base.css' />
-    <link rel='stylesheet' href='assets/css/book.css' />
+    <link rel='stylesheet' href='https://cdn.antonionardini.com/cherrytreehives/css/base.css' />
+    <link rel='stylesheet' href='https://cdn.antonionardini.com/cherrytreehives/css/book.css' />
+    <link rel="stylesheet" href="/assets/css/font.min.css" />
 
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" />
 </head>
@@ -71,7 +72,7 @@
             <div class="header__block">
                 <div class="header__logo">
                     <a class="logo" href="#">
-                        <img src="assets/img/logo.png" alt="Homepage"> <!-- https://www.styleshout.com/templates/preview/Booth_1_0_0/images/logo.svg -->
+                        <img src="https://cdn.antonionardini.com/cherrytreehives/img/logo.png" alt="Homepage">
                     </a>
                 </div>
 
@@ -87,16 +88,16 @@
                         <a href="/privacy/" class="smoothscroll">Privacy Policy</a>
                     </li>
                     <li>
-                        <a href="/terms/" class="smoothscroll">Terms of Use</a>
+                        <a href="/terms-of-use/" class="smoothscroll">Terms of Use</a>
                     </li>
                     <li class="header__nav-btn">
-                        <a href="#booking-form" class="smoothscroll">Book Now</a>
+                        <a href="/book/" class="smoothscroll">Book Now</a>
                     </li>
                 </ul>
             </nav>
 
             <div class="header__cta">
-                <a href="#booking-form" class="header__btn header__btn-stroke header__cta-btn smoothscroll">Book Now</a>
+                <a href="/book/" class="header__btn header__btn-stroke header__cta-btn smoothscroll">Book Now</a>
             </div>
 
         </div> <!-- end header__inner -->
@@ -133,13 +134,13 @@
                     Please makes sure to bring with you suitable footwear for potentially muddy terrain - wellies are advised! Please make sure you have sufficient, suitable clothing for the weather on the day - DO NOT bring brightly coloured clothing.
                 </p>
 
-                <a href="/conditions.html" target="_blank" rel="noreferrer nofollow">View our Terms and Conditions here</a>
+                <a href="/conditions/" target="_blank" rel="noreferrer nofollow">View our Terms and Conditions here</a>
                 <br>
-                <a href="/cancellation.html" target="_blank" rel="noreferrer nofollow">View our cancellation policy here</a>
+                <a href="/cancellation/" target="_blank" rel="noreferrer nofollow">View our cancellation policy here</a>
             </div>
 
             <div class="column large-6 w-900-stack info__photo-block">
-                <div class="info__photo" data-aos="fade-up" style="background-image: url(https://nardinia.github.io/CherryTreeHives/assets/img/gallery/optimised/work6.jpg);"></div>
+                <div class="info__photo" data-aos="fade-up" style="background-image: url(https://cdn.antonionardini.com/cherrytreehives/img/gallery/optimised/work6.jpg);"></div>
             </div>
         </div>
 
@@ -148,6 +149,11 @@
     <!-- booking form
     ================================================== -->
     <section class="booking__form" id="booking-form" style="height: fit-content;">
+        <div class="row">
+            <div class="column">
+                <h3 style="margin-bottom: var(--vspace-2);">Choose your package</h3>
+            </div>
+        </div>
         <script src="//widget.simplybook.it/v2/widget/widget.js"></script>
         <script>var widget = new SimplybookWidget({"widget_type":"iframe","url":"https:\/\/cherrytreehives.simplybook.it","theme":"hugo","theme_settings":{"timeline_hide_unavailable":"1","hide_past_days":"0","timeline_show_end_time":"0","timeline_modern_display":"as_slots","nav_bg_color":"#ffffff","sb_base_color":"#14171b","display_item_mode":"block","body_bg_color":"#ffffff","sb_review_image":"","dark_font_color":"#6c737d","light_font_color":"#ffffff","sb_company_label_color":"#ffffff","hide_img_mode":"1","show_sidebar":"1","sb_busy":"#41454b","sb_available":"#f9be58"},"timeline":"modern","datepicker":"top_calendar","is_rtl":false,"app_config":{"allow_switch_to_ada":0,"predefined":[]}});</script>
     </section>
@@ -216,6 +222,11 @@
                     <span>Design by <a href="https://www.styleshout.com/">StyleShout</a></span>
                     <span>Improved By <a href="https://antonionardini.com">Antonio Nardini</a></span> 
                 </div>
+
+                <div class="copyright">
+                    <span><a href="/terms-of-use/">Terms of use</a></span>
+                    <span><a href="/privacy/">Privacy Policy</a></span> 
+                </div>
             </div>
 
         </div>
@@ -224,8 +235,18 @@
     <!--==================== MODERNIZR JS =====================-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 
-    <script src="assets/js/all.js"></script>
-    <script src="assets/js/preloader.js"></script>
+    <script src="https://cdn.antonionardini.com/cherrytreehives/js/all.min.js"></script>
+    <script src="https://cdn.antonionardini.com/cherrytreehives/js/preloader.min.js"></script>
+
+    <noscript class="notification bottom-left show">
+        <div class="notification__inner">
+            <span>
+                <i class="bx bx-error"></i>
+                Please enable Javascript to use this website.
+            </span>
+            <i class="bx bx-x notification__close" onClick="hideNotification();"></i>
+        </div>
+    </noscript>
 
 </body>
 </html>
