@@ -75,8 +75,6 @@ window.addEventListener('DOMContentLoaded', () => {
 				}
 			});
 
-			console.log(data);
-
 			// Check all inputs are valid
 			const formData = data;
 			if (
