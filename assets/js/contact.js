@@ -98,7 +98,7 @@ window.addEventListener('DOMContentLoaded', () => {
                 subject: formData[1].value,
                 email: formData[2].value,
                 message: formData[3].value,
-                to: "techteacher.pershore@gmail.com",
+                to: "cherrytreehives@gmail.com",
             })
             .then(function(response) {
                 console.log(response);
