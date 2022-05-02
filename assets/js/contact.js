@@ -168,7 +168,7 @@ window.addEventListener('DOMContentLoaded', () => {
 				/^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
 			return [email_re.test(value), "Invalid Email"];
 		} else {
-			const re = /^[a-zA-Z0-9'-,. ]{2,55}$/;
+			const re = /^[a-zA-Z0-9'-,. ]{2,255}$/;
 			return [re.test(value), "Invalid Field"];
 		}
 	}
