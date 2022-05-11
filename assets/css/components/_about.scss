@@ -4,11 +4,11 @@
 	padding-bottom: 0;
 	position: relative;
 }
-.about__photo-block {
+.about__photo-block, .about__img-block {
 	position: relative;
 }
 .about__photo {
-	background-image: url(https://nardinia.github.io/CherryTreeHives/assets/img/beekeeper-suit.jpg);
+	background-image: url(https://cdn.antonionardini.com/cherrytreehives/img/beekeeper-suit.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -18,6 +18,14 @@
 	left: var(--gutter-lg);
 	bottom: var(--vspace-1);
 }
+
+.about__img {
+	display: block;
+	max-width: 100%;
+	width: 100%;
+	height: auto;
+}
+
 .about__process {
 	counter-reset: ctr;
 }
